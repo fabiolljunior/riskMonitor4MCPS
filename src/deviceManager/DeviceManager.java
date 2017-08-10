@@ -5,7 +5,7 @@ import java.util.List;
 
 import observer.Observable;
 import observer.Observer;
-import riskassessment.RiskMonitor;
+import riskAssessment.RiskMonitor;
 
 public class DeviceManager implements Observable {
 	

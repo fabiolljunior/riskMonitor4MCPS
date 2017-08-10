@@ -3,6 +3,7 @@ package measurementModel;
 public class Measurement {
 	
 	private String measurementId;
+	private String unitId;
 	private String deviceId;
 	private long timeStampInMiliseconds;
 	private double value;
@@ -33,6 +34,12 @@ public class Measurement {
 	}
 	public void setValue(double value) {
 		this.value = value;
+	}
+	public String getUnitId() {
+		return unitId;
+	}
+	public void setUnitId(String unitId) {
+		this.unitId = unitId;
 	}
 	
 	

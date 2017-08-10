@@ -1,0 +1,2732 @@
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357624
+        nanosec: 0
+    presentation_time :
+        sec: 1502357624
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357625
+        nanosec: 0
+    presentation_time :
+        sec: 1502357625
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357611
+        nanosec: 0
+    presentation_time :
+        sec: 1502357611
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357611
+        nanosec: 0
+    presentation_time :
+        sec: 1502357611
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357612
+        nanosec: 0
+    presentation_time :
+        sec: 1502357612
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357612
+        nanosec: 0
+    presentation_time :
+        sec: 1502357612
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357613
+        nanosec: 0
+    presentation_time :
+        sec: 1502357613
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357613
+        nanosec: 0
+    presentation_time :
+        sec: 1502357613
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357614
+        nanosec: 0
+    presentation_time :
+        sec: 1502357614
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357614
+        nanosec: 0
+    presentation_time :
+        sec: 1502357614
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357615
+        nanosec: 0
+    presentation_time :
+        sec: 1502357615
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357615
+        nanosec: 0
+    presentation_time :
+        sec: 1502357615
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357616
+        nanosec: 0
+    presentation_time :
+        sec: 1502357616
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357617
+        nanosec: 0
+    presentation_time :
+        sec: 1502357617
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357618
+        nanosec: 0
+    presentation_time :
+        sec: 1502357618
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357619
+        nanosec: 0
+    presentation_time :
+        sec: 1502357619
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357620
+        nanosec: 0
+    presentation_time :
+        sec: 1502357620
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357621
+        nanosec: 0
+    presentation_time :
+        sec: 1502357621
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357622
+        nanosec: 0
+    presentation_time :
+        sec: 1502357622
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357623
+        nanosec: 0
+    presentation_time :
+        sec: 1502357623
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357624
+        nanosec: 0
+    presentation_time :
+        sec: 1502357624
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357625
+        nanosec: 0
+    presentation_time :
+        sec: 1502357625
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357616
+        nanosec: 0
+    presentation_time :
+        sec: 1502357616
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357617
+        nanosec: 0
+    presentation_time :
+        sec: 1502357617
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357618
+        nanosec: 0
+    presentation_time :
+        sec: 1502357618
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357619
+        nanosec: 0
+    presentation_time :
+        sec: 1502357619
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357620
+        nanosec: 0
+    presentation_time :
+        sec: 1502357620
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357621
+        nanosec: 0
+    presentation_time :
+        sec: 1502357621
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357622
+        nanosec: 0
+    presentation_time :
+        sec: 1502357622
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357623
+        nanosec: 0
+    presentation_time :
+        sec: 1502357623
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357624
+        nanosec: 0
+    presentation_time :
+        sec: 1502357624
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357625
+        nanosec: 0
+    presentation_time :
+        sec: 1502357625
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357626
+        nanosec: 0
+    presentation_time :
+        sec: 1502357626
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357626
+        nanosec: 0
+    presentation_time :
+        sec: 1502357626
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357626
+        nanosec: 0
+    presentation_time :
+        sec: 1502357626
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 4.6601562, 4.484375, 4.0390625, 2.8398438, 2.578125, 1.5, 2.4101562, 2.3359375, 2.2773438, 2.2109375, 2.1679688, 2.1484375, 2.5976562, 3.0546875, 1.5546875, 2.4726562, 2.4335938, 2.4140625, 2.3945312, 2.375
+    device_time :
+        sec: 1502357626
+        nanosec: 0
+    presentation_time :
+        sec: 1502357626
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357626
+        nanosec: 0
+    presentation_time :
+        sec: 1502357626
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357626
+        nanosec: 0
+    presentation_time :
+        sec: 1502357626
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357627
+        nanosec: 0
+    presentation_time :
+        sec: 1502357627
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357627
+        nanosec: 0
+    presentation_time :
+        sec: 1502357627
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357627
+        nanosec: 0
+    presentation_time :
+        sec: 1502357627
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 2.3554688, 2.3710938, 2.4296875, 1.5078125, 1.578125, 1.5976562, 1.5546875, 2.4726562, 2.40625, 2.21875, 2.1484375, 2.078125, 4.875, 9.238281, 11.964844, 13.65625, 18.039062, 20.355469, 20.746094, 20.988281
+    device_time :
+        sec: 1502357627
+        nanosec: 0
+    presentation_time :
+        sec: 1502357627
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357627
+        nanosec: 0
+    presentation_time :
+        sec: 1502357627
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357627
+        nanosec: 0
+    presentation_time :
+        sec: 1502357627
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357628
+        nanosec: 0
+    presentation_time :
+        sec: 1502357628
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357628
+        nanosec: 0
+    presentation_time :
+        sec: 1502357628
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 22.089844, 21.597656, 21.90625, 23.042969, 23.433594, 22.671875, 22.871094, 24.019531, 24.105469, 24.167969, 24.167969, 24.242188, 24.320312, 24.425781, 23.597656, 23.816406, 25.09375, 25.09375, 25.148438, 25.105469
+    device_time :
+        sec: 1502357628
+        nanosec: 0
+    presentation_time :
+        sec: 1502357628
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357628
+        nanosec: 0
+    presentation_time :
+        sec: 1502357628
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357628
+        nanosec: 0
+    presentation_time :
+        sec: 1502357628
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357628
+        nanosec: 0
+    presentation_time :
+        sec: 1502357628
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357629
+        nanosec: 0
+    presentation_time :
+        sec: 1502357629
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357629
+        nanosec: 0
+    presentation_time :
+        sec: 1502357629
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357629
+        nanosec: 0
+    presentation_time :
+        sec: 1502357629
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 25.097656, 25.066406, 23.996094, 25.019531, 25.054688, 25.09375, 25.140625, 25.175781, 25.152344, 25.109375, 25.066406, 23.96875, 23.902344, 23.871094, 23.851562, 23.84375, 23.820312, 23.804688, 23.804688, 23.761719
+    device_time :
+        sec: 1502357629
+        nanosec: 0
+    presentation_time :
+        sec: 1502357629
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357629
+        nanosec: 0
+    presentation_time :
+        sec: 1502357629
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357629
+        nanosec: 0
+    presentation_time :
+        sec: 1502357629
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357630
+        nanosec: 0
+    presentation_time :
+        sec: 1502357630
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357630
+        nanosec: 0
+    presentation_time :
+        sec: 1502357630
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 23.742188, 23.683594, 23.574219, 24.417969, 24.257812, 24.011719, 24.011719, 22.941406, 22.765625, 20.34375, 20.34375, 14.503906, 12.019531, 8.339844, 4.6601562, 4.484375, 4.0390625, 2.8398438, 2.578125, 1.5
+    device_time :
+        sec: 1502357630
+        nanosec: 0
+    presentation_time :
+        sec: 1502357630
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357630
+        nanosec: 0
+    presentation_time :
+        sec: 1502357630
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357630
+        nanosec: 0
+    presentation_time :
+        sec: 1502357630
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357630
+        nanosec: 0
+    presentation_time :
+        sec: 1502357630
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357631
+        nanosec: 0
+    presentation_time :
+        sec: 1502357631
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357631
+        nanosec: 0
+    presentation_time :
+        sec: 1502357631
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357631
+        nanosec: 0
+    presentation_time :
+        sec: 1502357631
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 2.4101562, 2.3359375, 2.2773438, 2.2109375, 2.1679688, 2.1484375, 2.5976562, 3.0546875, 1.5546875, 2.4726562, 2.4335938, 2.4140625, 2.3945312, 2.375, 2.3554688, 2.3710938, 2.4296875, 1.5078125, 1.578125, 1.5976562
+    device_time :
+        sec: 1502357631
+        nanosec: 0
+    presentation_time :
+        sec: 1502357631
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357631
+        nanosec: 0
+    presentation_time :
+        sec: 1502357631
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357631
+        nanosec: 0
+    presentation_time :
+        sec: 1502357631
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357632
+        nanosec: 0
+    presentation_time :
+        sec: 1502357632
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357632
+        nanosec: 0
+    presentation_time :
+        sec: 1502357632
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357632
+        nanosec: 0
+    presentation_time :
+        sec: 1502357632
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 1.5546875, 2.4726562, 2.40625, 2.21875, 2.1484375, 2.078125, 4.875, 9.238281, 11.964844, 13.65625, 18.039062, 20.355469, 20.746094, 20.988281, 22.089844, 21.597656, 21.90625, 23.042969, 23.433594, 22.671875
+    device_time :
+        sec: 1502357632
+        nanosec: 0
+    presentation_time :
+        sec: 1502357632
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357632
+        nanosec: 0
+    presentation_time :
+        sec: 1502357632
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357632
+        nanosec: 0
+    presentation_time :
+        sec: 1502357632
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357633
+        nanosec: 0
+    presentation_time :
+        sec: 1502357633
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357633
+        nanosec: 0
+    presentation_time :
+        sec: 1502357633
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357633
+        nanosec: 0
+    presentation_time :
+        sec: 1502357633
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 22.871094, 24.019531, 24.105469, 24.167969, 24.167969, 24.242188, 24.320312, 24.425781, 23.597656, 23.816406, 25.09375, 25.09375, 25.148438, 25.105469, 25.097656, 25.066406, 23.996094, 25.019531, 25.054688, 25.09375
+    device_time :
+        sec: 1502357633
+        nanosec: 0
+    presentation_time :
+        sec: 1502357633
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357633
+        nanosec: 0
+    presentation_time :
+        sec: 1502357633
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357633
+        nanosec: 0
+    presentation_time :
+        sec: 1502357633
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357634
+        nanosec: 0
+    presentation_time :
+        sec: 1502357634
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357634
+        nanosec: 0
+    presentation_time :
+        sec: 1502357634
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357634
+        nanosec: 0
+    presentation_time :
+        sec: 1502357634
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 25.140625, 25.175781, 25.152344, 25.109375, 25.066406, 23.96875, 23.902344, 23.871094, 23.851562, 23.84375, 23.820312, 23.804688, 23.804688, 23.761719, 23.742188, 23.683594, 23.574219, 24.417969, 24.257812, 24.011719
+    device_time :
+        sec: 1502357634
+        nanosec: 0
+    presentation_time :
+        sec: 1502357634
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357634
+        nanosec: 0
+    presentation_time :
+        sec: 1502357634
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357634
+        nanosec: 0
+    presentation_time :
+        sec: 1502357634
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357635
+        nanosec: 0
+    presentation_time :
+        sec: 1502357635
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357635
+        nanosec: 0
+    presentation_time :
+        sec: 1502357635
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 24.011719, 22.941406, 22.765625, 20.34375, 20.34375, 14.503906, 12.019531, 8.339844, 4.6601562, 4.484375, 4.0390625, 2.8398438, 2.578125, 1.5, 2.4101562, 2.3359375, 2.2773438, 2.2109375, 2.1679688, 2.1484375
+    device_time :
+        sec: 1502357635
+        nanosec: 0
+    presentation_time :
+        sec: 1502357635
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357635
+        nanosec: 0
+    presentation_time :
+        sec: 1502357635
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357635
+        nanosec: 0
+    presentation_time :
+        sec: 1502357635
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357635
+        nanosec: 0
+    presentation_time :
+        sec: 1502357635
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357636
+        nanosec: 0
+    presentation_time :
+        sec: 1502357636
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357636
+        nanosec: 0
+    presentation_time :
+        sec: 1502357636
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357636
+        nanosec: 0
+    presentation_time :
+        sec: 1502357636
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 2.5976562, 3.0546875, 1.5546875, 2.4726562, 2.4335938, 2.4140625, 2.3945312, 2.375, 2.3554688, 2.3710938, 2.4296875, 1.5078125, 1.578125, 1.5976562, 1.5546875, 2.4726562, 2.40625, 2.21875, 2.1484375, 2.078125
+    device_time :
+        sec: 1502357636
+        nanosec: 0
+    presentation_time :
+        sec: 1502357636
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357636
+        nanosec: 0
+    presentation_time :
+        sec: 1502357636
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357636
+        nanosec: 0
+    presentation_time :
+        sec: 1502357636
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357637
+        nanosec: 0
+    presentation_time :
+        sec: 1502357637
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357637
+        nanosec: 0
+    presentation_time :
+        sec: 1502357637
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357637
+        nanosec: 0
+    presentation_time :
+        sec: 1502357637
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 4.875, 9.238281, 11.964844, 13.65625, 18.039062, 20.355469, 20.746094, 20.988281, 22.089844, 21.597656, 21.90625, 23.042969, 23.433594, 22.671875, 22.871094, 24.019531, 24.105469, 24.167969, 24.167969, 24.242188
+    device_time :
+        sec: 1502357637
+        nanosec: 0
+    presentation_time :
+        sec: 1502357637
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357637
+        nanosec: 0
+    presentation_time :
+        sec: 1502357637
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357637
+        nanosec: 0
+    presentation_time :
+        sec: 1502357637
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357638
+        nanosec: 0
+    presentation_time :
+        sec: 1502357638
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357638
+        nanosec: 0
+    presentation_time :
+        sec: 1502357638
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357638
+        nanosec: 0
+    presentation_time :
+        sec: 1502357638
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 24.320312, 24.425781, 23.597656, 23.816406, 25.09375, 25.09375, 25.148438, 25.105469, 25.097656, 25.066406, 23.996094, 25.019531, 25.054688, 25.09375, 25.140625, 25.175781, 25.152344, 25.109375, 25.066406, 23.96875
+    device_time :
+        sec: 1502357638
+        nanosec: 0
+    presentation_time :
+        sec: 1502357638
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357638
+        nanosec: 0
+    presentation_time :
+        sec: 1502357638
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357638
+        nanosec: 0
+    presentation_time :
+        sec: 1502357638
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357639
+        nanosec: 0
+    presentation_time :
+        sec: 1502357639
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357639
+        nanosec: 0
+    presentation_time :
+        sec: 1502357639
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357639
+        nanosec: 0
+    presentation_time :
+        sec: 1502357639
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 23.902344, 23.871094, 23.851562, 23.84375, 23.820312, 23.804688, 23.804688, 23.761719, 23.742188, 23.683594, 23.574219, 24.417969, 24.257812, 24.011719, 24.011719, 22.941406, 22.765625, 20.34375, 20.34375, 14.503906
+    device_time :
+        sec: 1502357639
+        nanosec: 0
+    presentation_time :
+        sec: 1502357639
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357639
+        nanosec: 0
+    presentation_time :
+        sec: 1502357639
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357639
+        nanosec: 0
+    presentation_time :
+        sec: 1502357639
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357640
+        nanosec: 0
+    presentation_time :
+        sec: 1502357640
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357640
+        nanosec: 0
+    presentation_time :
+        sec: 1502357640
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357640
+        nanosec: 0
+    presentation_time :
+        sec: 1502357640
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 12.019531, 8.339844, 4.6601562, 4.484375, 4.0390625, 2.8398438, 2.578125, 1.5, 2.4101562, 2.3359375, 2.2773438, 2.2109375, 2.1679688, 2.1484375, 2.5976562, 3.0546875, 1.5546875, 2.4726562, 2.4335938, 2.4140625
+    device_time :
+        sec: 1502357640
+        nanosec: 0
+    presentation_time :
+        sec: 1502357640
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357640
+        nanosec: 0
+    presentation_time :
+        sec: 1502357640
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357640
+        nanosec: 0
+    presentation_time :
+        sec: 1502357640
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357641
+        nanosec: 0
+    presentation_time :
+        sec: 1502357641
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 2.3945312, 2.375, 2.3554688, 2.3710938, 2.4296875, 1.5078125, 1.578125, 1.5976562, 1.5546875, 2.4726562, 2.40625, 2.21875, 2.1484375, 2.078125, 4.875, 9.238281, 11.964844, 13.65625, 18.039062, 20.355469
+    device_time :
+        sec: 1502357641
+        nanosec: 0
+    presentation_time :
+        sec: 1502357641
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357641
+        nanosec: 0
+    presentation_time :
+        sec: 1502357641
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357641
+        nanosec: 0
+    presentation_time :
+        sec: 1502357641
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357641
+        nanosec: 0
+    presentation_time :
+        sec: 1502357641
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357641
+        nanosec: 0
+    presentation_time :
+        sec: 1502357641
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357642
+        nanosec: 0
+    presentation_time :
+        sec: 1502357642
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357642
+        nanosec: 0
+    presentation_time :
+        sec: 1502357642
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357642
+        nanosec: 0
+    presentation_time :
+        sec: 1502357642
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 20.746094, 20.988281, 22.089844, 21.597656, 21.90625, 23.042969, 23.433594, 22.671875, 22.871094, 24.019531, 24.105469, 24.167969, 24.167969, 24.242188, 24.320312, 24.425781, 23.597656, 23.816406, 25.09375, 25.09375
+    device_time :
+        sec: 1502357642
+        nanosec: 0
+    presentation_time :
+        sec: 1502357642
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357642
+        nanosec: 0
+    presentation_time :
+        sec: 1502357642
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357642
+        nanosec: 0
+    presentation_time :
+        sec: 1502357642
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357643
+        nanosec: 0
+    presentation_time :
+        sec: 1502357643
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357643
+        nanosec: 0
+    presentation_time :
+        sec: 1502357643
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357643
+        nanosec: 0
+    presentation_time :
+        sec: 1502357643
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 25.148438, 25.105469, 25.097656, 25.066406, 23.996094, 25.019531, 25.054688, 25.09375, 25.140625, 25.175781, 25.152344, 25.109375, 25.066406, 23.96875, 23.902344, 23.871094, 23.851562, 23.84375, 23.820312, 23.804688
+    device_time :
+        sec: 1502357643
+        nanosec: 0
+    presentation_time :
+        sec: 1502357643
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357643
+        nanosec: 0
+    presentation_time :
+        sec: 1502357643
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357643
+        nanosec: 0
+    presentation_time :
+        sec: 1502357643
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357644
+        nanosec: 0
+    presentation_time :
+        sec: 1502357644
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357644
+        nanosec: 0
+    presentation_time :
+        sec: 1502357644
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357644
+        nanosec: 0
+    presentation_time :
+        sec: 1502357644
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 23.804688, 23.761719, 23.742188, 23.683594, 23.574219, 24.417969, 24.257812, 24.011719, 24.011719, 22.941406, 22.765625, 20.34375, 20.34375, 14.503906, 12.019531, 8.339844, 4.6601562, 4.484375, 4.0390625, 2.8398438
+    device_time :
+        sec: 1502357644
+        nanosec: 0
+    presentation_time :
+        sec: 1502357644
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357644
+        nanosec: 0
+    presentation_time :
+        sec: 1502357644
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357644
+        nanosec: 0
+    presentation_time :
+        sec: 1502357644
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357645
+        nanosec: 0
+    presentation_time :
+        sec: 1502357645
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357645
+        nanosec: 0
+    presentation_time :
+        sec: 1502357645
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357645
+        nanosec: 0
+    presentation_time :
+        sec: 1502357645
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 2.578125, 1.5, 2.4101562, 2.3359375, 2.2773438, 2.2109375, 2.1679688, 2.1484375, 2.5976562, 3.0546875, 1.5546875, 2.4726562, 2.4335938, 2.4140625, 2.3945312, 2.375, 2.3554688, 2.3710938, 2.4296875, 1.5078125
+    device_time :
+        sec: 1502357645
+        nanosec: 0
+    presentation_time :
+        sec: 1502357645
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357645
+        nanosec: 0
+    presentation_time :
+        sec: 1502357645
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357645
+        nanosec: 0
+    presentation_time :
+        sec: 1502357645
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 1.578125, 1.5976562, 1.5546875, 2.4726562, 2.40625, 2.21875, 2.1484375, 2.078125, 4.875, 9.238281, 11.964844, 13.65625, 18.039062, 20.355469, 20.746094, 20.988281, 22.089844, 21.597656, 21.90625, 23.042969
+    device_time :
+        sec: 1502357646
+        nanosec: 0
+    presentation_time :
+        sec: 1502357646
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357646
+        nanosec: 0
+    presentation_time :
+        sec: 1502357646
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357646
+        nanosec: 0
+    presentation_time :
+        sec: 1502357646
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357646
+        nanosec: 0
+    presentation_time :
+        sec: 1502357646
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357646
+        nanosec: 0
+    presentation_time :
+        sec: 1502357646
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357646
+        nanosec: 0
+    presentation_time :
+        sec: 1502357646
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357647
+        nanosec: 0
+    presentation_time :
+        sec: 1502357647
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357647
+        nanosec: 0
+    presentation_time :
+        sec: 1502357647
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357647
+        nanosec: 0
+    presentation_time :
+        sec: 1502357647
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 23.433594, 22.671875, 22.871094, 24.019531, 24.105469, 24.167969, 24.167969, 24.242188, 24.320312, 24.425781, 23.597656, 23.816406, 25.09375, 25.09375, 25.148438, 25.105469, 25.097656, 25.066406, 23.996094, 25.019531
+    device_time :
+        sec: 1502357647
+        nanosec: 0
+    presentation_time :
+        sec: 1502357647
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357647
+        nanosec: 0
+    presentation_time :
+        sec: 1502357647
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357647
+        nanosec: 0
+    presentation_time :
+        sec: 1502357647
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357648
+        nanosec: 0
+    presentation_time :
+        sec: 1502357648
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357648
+        nanosec: 0
+    presentation_time :
+        sec: 1502357648
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357648
+        nanosec: 0
+    presentation_time :
+        sec: 1502357648
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 25.054688, 25.09375, 25.140625, 25.175781, 25.152344, 25.109375, 25.066406, 23.96875, 23.902344, 23.871094, 23.851562, 23.84375, 23.820312, 23.804688, 23.804688, 23.761719, 23.742188, 23.683594, 23.574219, 24.417969
+    device_time :
+        sec: 1502357648
+        nanosec: 0
+    presentation_time :
+        sec: 1502357648
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357648
+        nanosec: 0
+    presentation_time :
+        sec: 1502357648
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357648
+        nanosec: 0
+    presentation_time :
+        sec: 1502357648
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357649
+        nanosec: 0
+    presentation_time :
+        sec: 1502357649
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357649
+        nanosec: 0
+    presentation_time :
+        sec: 1502357649
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 37650.504, 36799.227, 35933.277, 35075.297, 34233.098, 33417.105, 32653.22, 31982.814, 31467.523, 31161.143, 31085.293, 31218.877, 31510.154, 31878.604, 32244.217, 32536.367, 32711.39, 32749.709, 32645.238, 32414.742, 32090.914, 32727.75, 33053.01, 33258.277, 33330.695, 33274.05, 33107.062, 32846.945, 32517.771, 32137.797, 31729.266, 31308.746, 30891.62, 30487.93, 30105.64, 29756.438, 29450.531, 29196.373, 28999.246, 28868.457, 28808.355, 28819.35, 28890.156, 29007.648, 29160.744, 29325.06, 29480.107, 29608.957, 29708.025, 29782.088, 29828.809, 29856.621, 29878.764, 29911.422, 29971.768, 30103.059, 30393.053, 30950.227, 31850.592, 33091.344, 34583.914, 36153.164, 37587.117, 38707.863, 39416.1, 39694.086, 39584.254, 39159.996, 38510.26, 37720.793, 36863.53, 35987.02, 35115.598, 34265.13, 33448.79, 32708.041, 32100.385, 31695.15, 31547.188, 31666.049, 32012.111, 32509.787, 33061.71, 33573.277, 33980.72, 34248.547, 34376.074, 34362.586, 34225.477, 33988.44, 33677.027, 33313.92, 32925.508, 32527.299, 32129.023, 31739.01, 31366.432, 31028.326, 30738.264, 30512.055
+    device_time :
+        sec: 1502357649
+        nanosec: 0
+    presentation_time :
+        sec: 1502357649
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 24.257812, 24.011719, 24.011719, 22.941406, 22.765625, 20.34375, 20.34375, 14.503906, 12.019531, 8.339844, 4.6601562, 4.484375, 4.0390625, 2.8398438, 2.578125, 1.5, 2.4101562, 2.3359375, 2.2773438, 2.2109375
+    device_time :
+        sec: 1502357649
+        nanosec: 0
+    presentation_time :
+        sec: 1502357649
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357649
+        nanosec: 0
+    presentation_time :
+        sec: 1502357649
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357649
+        nanosec: 0
+    presentation_time :
+        sec: 1502357649
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357650
+        nanosec: 0
+    presentation_time :
+        sec: 1502357650
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357650
+        nanosec: 0
+    presentation_time :
+        sec: 1502357650
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 30352.27, 30252.334, 30199.018, 30182.514, 30196.293, 30229.682, 30284.303, 30357.361, 30446.271, 30540.777, 30641.662, 30752.018, 30885.387, 31070.89, 31379.703, 31907.1, 32737.268, 33896.254, 35337.12, 36914.016, 38434.156, 39701.754, 40588.2, 41038.156, 41066.74, 40739.93, 40143.867, 39361.996, 38472.625, 37537.07, 36593.67, 35663.273, 34757.074, 33895.875, 33119.758, 32494.578, 32087.533, 31943.775, 32069.68, 32416.29, 32893.72, 33404.137, 33861.406, 34212.45, 34426.207, 34498.24, 34434.523, 34245.906, 33959.332, 33597.176, 33184.88, 32747.541, 32300.984, 31854.775, 31418.81, 31009.275, 30637.3, 30307.717, 30026.732, 29800.105, 29625.264, 29500.93, 29421.867, 29383.516, 29384.332, 29415.053, 29469.887, 29543.18, 29632.49, 29743.193, 29891.594, 30133.97, 30575.686, 31331.207, 32466.69, 33963.734, 35705.355, 37487.438, 39088.074, 40329.215, 41115.695, 41435.805, 41334.598, 40895.71, 40216.383, 39390.277, 38489.113, 37568.79, 36651.773, 35742.566, 34844.254, 33980.664, 33194.156, 32551.34, 32121.809, 31951.002, 32039.045, 32337.092, 32764.953, 33228.88
+    device_time :
+        sec: 1502357650
+        nanosec: 0
+    presentation_time :
+        sec: 1502357650
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 2.1679688, 2.1484375, 2.5976562, 3.0546875, 1.5546875, 2.4726562, 2.4335938, 2.4140625, 2.3945312, 2.375, 2.3554688, 2.3710938, 2.4296875, 1.5078125, 1.578125, 1.5976562, 1.5546875, 2.4726562, 2.40625, 2.21875
+    device_time :
+        sec: 1502357650
+        nanosec: 0
+    presentation_time :
+        sec: 1502357650
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357650
+        nanosec: 0
+    presentation_time :
+        sec: 1502357650
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357650
+        nanosec: 0
+    presentation_time :
+        sec: 1502357650
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PULS_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 60.0
+    device_time :
+        sec: 1502357651
+        nanosec: 0
+    presentation_time :
+        sec: 1502357651
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_SAT_O2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 98.0
+    device_time :
+        sec: 1502357651
+        nanosec: 0
+    presentation_time :
+        sec: 1502357651
+        nanosec: 0
+
+:
+    unique_device_identifier: bvkcuL0MtpSHovslPhsXmQR936pYkYvV1ZHg
+    metric_id: MDC_PULS_OXIM_PLETH
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    frequency: 100
+    values :
+        userData: 33648.113, 33970.785, 34167.0, 34227.035, 34148.902, 33946.293, 33635.09, 33240.34, 32786.254, 32305.52, 31823.148, 31349.809, 30906.133, 30503.178, 30147.648, 29842.648, 29596.246, 29409.848, 29281.057, 29203.863, 29166.89, 29156.77, 29157.846, 29170.34, 29192.72, 29236.066, 29313.201, 29436.4, 29636.066, 29975.06, 30543.074, 31417.928, 32636.988, 34151.895, 35835.25, 37497.992, 38943.47, 40020.535, 40662.715, 40869.934, 40697.01, 40220.78, 39536.016, 38727.418, 37852.508, 36952.906, 36053.223, 35166.95, 34307.906, 33504.195, 32800.73, 32262.979, 31941.836, 31861.816, 32003.895, 32322.16, 32732.023, 33143.344, 33482.95, 33713.668, 33813.957, 33780.562, 33621.016, 33351.145, 32987.867, 32554.904, 32083.295, 31597.307, 31118.766, 30662.729, 30247.703, 29881.148, 29570.213, 29322.889, 29138.777, 29006.219, 28909.01, 28845.604, 28809.8, 28794.988, 28802.504, 28836.541, 28901.021, 28999.9, 29145.13, 29360.645, 29699.098, 30234.955, 31048.764, 32175.951, 33574.645, 35133.688, 36679.105, 38022.562, 39021.133, 39607.28, 39780.867, 39589.19, 39114.25, 38441.875
+    device_time :
+        sec: 1502357651
+        nanosec: 0
+    presentation_time :
+        sec: 1502357651
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_MMHG
+    frequency: 20
+    values :
+        userData: 2.1484375, 2.078125, 4.875, 9.238281, 11.964844, 13.65625, 18.039062, 20.355469, 20.746094, 20.988281, 22.089844, 21.597656, 21.90625, 23.042969, 23.433594, 22.671875, 22.871094, 24.019531, 24.105469, 24.167969
+    device_time :
+        sec: 1502357651
+        nanosec: 0
+    presentation_time :
+        sec: 1502357651
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_CO2_RESP_RATE
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 15.0
+    device_time :
+        sec: 1502357651
+        nanosec: 0
+    presentation_time :
+        sec: 1502357651
+        nanosec: 0
+
+:
+    unique_device_identifier: b1hKaQmmolnHNCyoXBuLTPdCpo9xbeaVfS8w
+    metric_id: MDC_AWAY_CO2_ET
+    vendor_metric_id: 
+    instance_id: 0
+    unit_id: MDC_DIM_DIMLESS
+    value: 30.0
+    device_time :
+        sec: 1502357651
+        nanosec: 0
+    presentation_time :
+        sec: 1502357651
+        nanosec: 0
+

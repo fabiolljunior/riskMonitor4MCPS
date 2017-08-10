@@ -1,4 +1,4 @@
-package riskassessment;
+package riskAssessment;
 
 public class RiskCalculator {
 

@@ -1,4 +1,4 @@
-package riskassessment;
+package riskAssessment;
 
 import java.util.ArrayList;
 import java.util.List;
