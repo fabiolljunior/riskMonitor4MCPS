@@ -1,12 +1,15 @@
 package measurementModel;
 
+import java.util.List;
+
 public class Measurement {
 	
 	private String measurementId;
 	private String unitId;
 	private String deviceId;
 	private long timeStampInMiliseconds;
-	private double value;
+	private Double value;
+	private List<Double> values;
 	
 	public String getMeasurementId() {
 		return measurementId;
@@ -29,10 +32,10 @@ public class Measurement {
 		this.timeStampInMiliseconds = timeStampInMiliseconds;
 	}
 	
-	public double getValue() {
+	public Double getValue() {
 		return value;
 	}
-	public void setValue(double value) {
+	public void setValue(Double value) {
 		this.value = value;
 	}
 	public String getUnitId() {
@@ -41,7 +44,11 @@ public class Measurement {
 	public void setUnitId(String unitId) {
 		this.unitId = unitId;
 	}
-	
-	
+	public List<Double> getValues() {
+		return values;
+	}
+	public void setValues(List<Double> values) {
+		this.values = values;
+	}
 
 }
