@@ -7,7 +7,7 @@ public class RiskMonitor {
 	
 	private List<Double> risks;
 	
-	public void addRisk(Double risk) {
+	public void updateRisk(Double risk) {
 		if (this.risks == null) {
 			this.risks = new ArrayList<Double>();
 		}
