@@ -6,6 +6,7 @@ import java.util.List;
 import observer.Observable;
 import observer.Observer;
 import riskAssessment.RiskMonitor;
+import util.Device;
 
 /**
  * Esta classe deveria ser uma factory singleton de devices.  Acho que não faz sentido deixar aberto o código
@@ -56,48 +57,40 @@ public class DeviceManager implements Observable {
 	public void notifyObservers() {
 		for (Observer ob : this.observers) {
 			System.out.println("Notificando observers!");
-			this.riskMonitor.updateRisk(ob.updateRisk());
+
+			if(ob.isAlive()) {
+				this.riskMonitor.updateRisk(ob.updateRisk());
+			} else {
+				System.out.println("device is not alive!");
+			}
 		}
-		
 	}
 
-	/**
-	 * Entendo que este método seja responsável por receber os measurements brutos (String,por exemplo)
-	 * e transformá-los em objetos measurements e atribuir para o respectivo despositivo.
-	 * 
-	 *  Acredito que este código faça mais sentido por aqui. Não sei se neste método.
-	 *  List<String> devices = new ArrayList<String>(Arrays.asList("Name: PulseOximeter,", "Name: RespirationMonitor,"));
-		Random r = new Random();
-		
-		int z = 10;
-		while (z>0) {
-			int device = r.nextInt(1);
-			
-			String data = devices.get(device) + " Valor: " + r.nextDouble();
-			manager.sendDaTa(data);
-			z = z-1;
-		}
-	 *  
-	 * @param data
-	 */
-	public void sendDaTa(String data) {
-		if (data.contains("PulseOximeter")) {
-			int indexInit = data.lastIndexOf(":") + 1;
-			String value = data.substring(indexInit, data.length()).trim();
-			this.genericPulseOximeter.setData(new Double(value));
-		}
-		
-		this.notifyObservers();
-	}
-	
-	/**
-	 * TODO: Proposta de analisar essa forma de usar a api do opeICE. O que é que você acha ?
-	 * Dá uma olhada na classe data tem como pegar ja'os valores.
-	 * @param data
-	 */
 	public void sendDaTa(ice.Numeric data) {
+        
 		if (data != null) {
-			this.genericPulseOximeter.setData(new Double(data.value));
+			
+			try {
+				String deviceID = data.metric_id;
+				
+				if (deviceID.equals(Device.PULS_OXIM_PULS_RATE.getName())) {
+					this.genericPulseOximeter.setData(new Double(data.value));
+					this.genericPulseOximeter.resetSecondsWithOutData();
+					this.genericRespirationMonitor.updateSecondsWithOutData();
+					
+				} else if (deviceID.equals(Device.CO2_RESP_RATE.getName())) {
+					this.genericRespirationMonitor.setData(new Double(data.value));
+					this.genericRespirationMonitor.resetSecondsWithOutData();
+					this.genericPulseOximeter.updateSecondsWithOutData();
+					
+				} else {
+					System.out.println("Device not registered!");
+				}
+			} catch (java.lang.NoSuchFieldError nsfe) {
+				System.out.println("nao tem campo correspondente");
+			}
+			
+			
 		}
 		this.notifyObservers();
 	}

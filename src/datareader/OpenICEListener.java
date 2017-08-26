@@ -148,6 +148,7 @@ public class OpenICEListener implements Runnable {
 					}
 				} catch (RETCODE_NO_DATA noData) {
 					// No Data was available to the read call
+					System.out.println("sem dados!");
 				} finally {
 					// the objects provided by "read" are owned by the reader
 					// and we must return them

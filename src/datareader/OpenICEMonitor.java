@@ -53,7 +53,7 @@ public class OpenICEMonitor {
 		// Pause for 30 seconds and force quitting the app (because we're
         // looping infinitely)
         try {
-			Thread.sleep(30000);
+			Thread.sleep(30000000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

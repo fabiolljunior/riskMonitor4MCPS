@@ -12,5 +12,13 @@ public class GenericPulseOximeter extends GenericDevice implements Observer {
 		}
 		return 0d;
 	}
+	
+	public boolean isAlive() {
+		if (this.secondsWithoutData == TIME_TO_DEAD) {
+			return false;
+		}
+		return true;
+	}
+
 
 }
