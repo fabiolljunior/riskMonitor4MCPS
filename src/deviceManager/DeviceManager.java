@@ -72,6 +72,8 @@ public class DeviceManager {
 					this.getGenericPulseOximeter().updateSecondsWithOutData();
 				} else {
 					System.out.println("Device not registered!");
+					this.genericPulseOximeter.updateSecondsWithOutData();
+					this.genericRespirationMonitor.updateSecondsWithOutData();
 				}
 			} catch (java.lang.NoSuchFieldError nsfe) {
 				System.out.println("nao tem campo correspondente");
