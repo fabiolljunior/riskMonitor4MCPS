@@ -9,6 +9,10 @@
 	<classpathentry kind="lib" path="lib/slf4j-api-1.7.10.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.10.jar"/>
 	<classpathentry kind="lib" path="lib/x73-idl-rti-dds-0.6.3.jar"/>
+	<classpathentry kind="lib" path="lib/mockito-core-2.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/byte-buddy-1.7.3.jar"/>
+	<classpathentry kind="lib" path="lib/byte-buddy-agent-1.7.3.jar"/>
+	<classpathentry kind="lib" path="lib/objenesis-2.6.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

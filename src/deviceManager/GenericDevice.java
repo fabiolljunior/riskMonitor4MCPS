@@ -1,25 +1,34 @@
 package deviceManager;
 
+import java.util.List;
+
+import observer.DeviceObserver;
+import util.Device;
+
 public class GenericDevice {
 	
 	protected static final int TIME_TO_DEAD = 5;
 	
-	protected Double data;
+	protected float data;
 	protected int secondsWithoutData = 0;
 	
-	public Double getData() {
+	protected List<DeviceObserver> devicesObservers; 
+	
+	public float getData() {
 		return this.data;
 	}
 
-	public void setData(Double data) {
-		this.data = data;
+	public void setData(float value, Device measurementType) {
+		resetSecondsWithOutData();
+		this.data = value;
+		//TODO: notify riskMonitor
 	}
 
-	public int getSecondsWithoutData() {
+	protected int getSecondsWithoutData() {
 		return secondsWithoutData;
 	}
 
-	public void setSecondsWithoutData(int secondsWithoutData) {
+	protected void setSecondsWithoutData(int secondsWithoutData) {
 		this.secondsWithoutData = secondsWithoutData;
 	}
 	
@@ -30,4 +39,6 @@ public class GenericDevice {
 	public void updateSecondsWithOutData() {
 		this.secondsWithoutData++;
 	}
+
+	
 }
