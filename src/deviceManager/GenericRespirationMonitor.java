@@ -1,5 +1,7 @@
 package deviceManager;
 
+import java.util.Calendar;
+
 import util.Device;
 
 public class GenericRespirationMonitor extends GenericDevice {
@@ -8,15 +10,10 @@ public class GenericRespirationMonitor extends GenericDevice {
 	private int currentRespirationRate = INVALID_VALUE ;
 	private double currentEtCO2 = INVALID_VALUE ;
 	
-	public boolean isAlive() {
-		if (this.secondsWithoutData == TIME_TO_DEAD) {
-			return false;
-		}
-		return true;
-	}
-	
 	@Override
 	public void setData(float value, Device measurementType) {
+		setLastDataReceived(Calendar.getInstance());
+		
 		if (Device.RESP_MONITOR_RESP_RATE.equals(measurementType)) {
 			currentRespirationRate = Math.round(value);
 		} else { // then Device.PULS_OXIM_SAT_O2

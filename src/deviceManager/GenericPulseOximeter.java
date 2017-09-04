@@ -1,11 +1,11 @@
 package deviceManager;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import observer.HRObservable;
 import observer.HRObserver;
-import observer.Observer;
 import observer.SPO2Observable;
 import observer.SPO2Observer;
 import util.Device;
@@ -20,15 +20,17 @@ public class GenericPulseOximeter extends GenericDevice implements SpO2Device, H
 	private List<HRObserver> hrObservers = new ArrayList<>();
 	
 	
-	public boolean isAlive() {
-		if (this.secondsWithoutData == TIME_TO_DEAD) {
-			return false;
-		}
-		return true;
-	}
+//	public boolean isAlive() {
+//		if (this.secondsWithoutData == TIME_TO_DEAD) {
+//			return false;
+//		}
+//		return true;
+//	}
 	
 	@Override
 	public void setData(float value, Device measurementType) {
+		setLastDataReceived(Calendar.getInstance());
+		
 		if (Device.PULS_OXIM_PULS_RATE.equals(measurementType)) {
 			currentHeartRate = Math.round(value);
 			//TODO: Notify the listeners
@@ -38,6 +40,7 @@ public class GenericPulseOximeter extends GenericDevice implements SpO2Device, H
 			//TODO: Notify the listeners
 			notifySPO2Listeners(currentSpO2);
 		}
+		
 	}
 	
 	public void notifySPO2Listeners(double currentSpO2) {

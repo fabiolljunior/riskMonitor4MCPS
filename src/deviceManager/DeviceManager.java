@@ -1,5 +1,8 @@
 package deviceManager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import util.Device;
 
 /**
@@ -18,9 +21,14 @@ public class DeviceManager {
 	private GenericPulseOximeter genericPulseOximeter;
 	private GenericRespirationMonitor genericRespirationMonitor;
 	
+	private List<GenericDevice> devices;
+	
 	private DeviceManager() {
 		this.setGenericPulseOximeter(new GenericPulseOximeter());
 		this.setGenericRespirationMonitor(new GenericRespirationMonitor());
+		
+		addDeviceToList(getGenericPulseOximeter());
+		addDeviceToList(getGenericRespirationMonitor());
 	}
 	
 	public static DeviceManager getInstance() {
@@ -29,23 +37,16 @@ public class DeviceManager {
 		}
 		return singleton;
 	}
-
-
-//	@Override
-//	public void notifyObservers() {
-//		for (Observer ob : this.observers) {
-//			System.out.println("Notificando observers!");
-//
-//			if(ob.isAlive()) {
-//				this.riskMonitor.updateRisk(ob.updateRisk());
-//			} else {
-//				System.out.println("device is not alive!");
-//			}
-//		}
-//	}
-
+	
+	private void addDeviceToList(GenericDevice dev) {
+		if (this.devices == null) {
+			this.devices = new ArrayList<GenericDevice>();
+		}
+		
+		this.devices.add(dev);
+	}
+	
 	public void sendDaTa(ice.Numeric data) {
-        
 		if (data != null) {
 			
 			try {
@@ -54,32 +55,26 @@ public class DeviceManager {
 				if (deviceID.equals(Device.PULS_OXIM_PULS_RATE.getName())) {
 					this.getGenericPulseOximeter().setData(data.value, Device.PULS_OXIM_PULS_RATE);
 					//TODO: eu acho que é melhor confiar no clock do relógio do sistema, pode acontecer de receber mais de uma msg por segundo
-					this.getGenericRespirationMonitor().updateSecondsWithOutData();
 					
 				}  else if (deviceID.equals(Device.PULS_OXIM_SAT_O2.getName())) {
 					this.getGenericPulseOximeter().setData(data.value,Device.PULS_OXIM_SAT_O2);
 					//TODO: eu acho que é melhor confiar no clock do relógio do sistema, pode acontecer de receber mais de uma msg por segundo
-					this.getGenericRespirationMonitor().updateSecondsWithOutData();
 					
 				} else if (deviceID.equals(Device.RESP_MONITOR_RESP_RATE.getName())) {
 					this.getGenericRespirationMonitor().setData(data.value, Device.RESP_MONITOR_RESP_RATE);
 					//TODO: eu acho que é melhor confiar no clock do relógio do sistema, pode acontecer de receber mais de uma msg por segundo
-					this.getGenericPulseOximeter().updateSecondsWithOutData();
 					
 				} else if (deviceID.equals(Device.RESP_MONITOR_ETCO2.getName())) {
 					this.getGenericRespirationMonitor().setData(data.value, Device.RESP_MONITOR_ETCO2);
 					//TODO: eu acho que é melhor confiar no clock do relógio do sistema, pode acontecer de receber mais de uma msg por segundo
-					this.getGenericPulseOximeter().updateSecondsWithOutData();
+					
 				} else {
 					System.out.println("Device not registered!");
-					this.genericPulseOximeter.updateSecondsWithOutData();
-					this.genericRespirationMonitor.updateSecondsWithOutData();
+					
 				}
 			} catch (java.lang.NoSuchFieldError nsfe) {
 				System.out.println("nao tem campo correspondente");
 			}
-			
-			
 		}
 	}
 
