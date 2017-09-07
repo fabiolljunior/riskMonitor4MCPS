@@ -6,7 +6,7 @@ import java.util.List;
 import observer.DeviceObserver;
 import util.Device;
 
-public class GenericDevice {
+public abstract class GenericDevice {
 	
 	protected static final int TIME_TO_DEAD = 5;
 	
@@ -55,11 +55,14 @@ public class GenericDevice {
 	public boolean isAlive() {
 		boolean differenceInSecondsBiggerThenTimeToDead = isDifferenceInSecondsBiggerThenTimeToDead();
 		if (differenceInSecondsBiggerThenTimeToDead) {
+			resetCurrentValues();
 			return false;
 		}
 		return true;
 	}
 	
+	protected abstract void resetCurrentValues();
+
 	private boolean isDifferenceInSecondsBiggerThenTimeToDead() {
 		if (this.lastDataReceived != null) {
 			long seconds = (Calendar.getInstance().getTimeInMillis()  

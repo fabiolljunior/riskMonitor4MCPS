@@ -37,7 +37,7 @@ public class GenericRespirationMonitor extends GenericDevice implements RRObserv
 		this.currentEtCO2 = currentEtCO2;
 	}
 
-	public int getCurrentHeartRate() {
+	public int getCurrentRespirationRate() {
 		return currentRespirationRate;
 	}
 
@@ -78,6 +78,13 @@ public class GenericRespirationMonitor extends GenericDevice implements RRObserv
 	@Override
 	public void removeETCO2Observer(ETCO2Observer observer) {
 		etco2Observers.remove(observer);
+	}
+
+	@Override
+	protected void resetCurrentValues() {
+		this.currentEtCO2 = INVALID_VALUE;
+		this.currentRespirationRate = INVALID_VALUE;
+		
 	}
 
 }

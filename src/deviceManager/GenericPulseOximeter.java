@@ -90,4 +90,11 @@ public class GenericPulseOximeter extends GenericDevice implements SpO2Device, H
 		
 	}
 
+	@Override
+	protected void resetCurrentValues() {
+		this.currentHeartRate = INVALID_VALUE;
+		this.currentSpO2 = INVALID_VALUE;
+		
+	}
+
 }

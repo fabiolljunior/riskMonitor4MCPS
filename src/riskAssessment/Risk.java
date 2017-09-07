@@ -1,24 +1,35 @@
 package riskAssessment;
 
-public class Risk {
+public enum Risk {
 	
-	public static int LOWER_RISK_VALUE = 0;
-	public static int LOW_ALERT_RISK_VALUE = 4;
-	public static int ALERT_RISK_VALUE = 9;
-	public static int CRITIC_RISK_VALUE = 12;
-	public static int HIGHER_RISK_VALUE = 25;
-	
-	private Risk monitoringRiskPO = null;
-	private Risk monitoringRiskCap = null;
+	LOWER_RISK_VALUE(0),
+	LOW_ALERT_RISK_VALUE(4),
+	ALERT_RISK_VALUE(9),
+	CRITIC_RISK_VALUE(12),
+	HIGHTEST_RISK_VALUE(25);
 	
 	private int finalValue;
 	
-	public Risk(int value) {
+	Risk(int value) {
 		this.finalValue = value;
 	}
 	
-	public Risk() {
+	Risk() {
 		this.finalValue = 0;
+	}
+	
+	static Risk getRisk(RiskCriticalityLevel monitoringRisk) {
+		if (RiskCriticalityLevel.Catastrophical.equals(monitoringRisk)) {
+			return HIGHTEST_RISK_VALUE;
+		} else if (RiskCriticalityLevel.Critical.equals(monitoringRisk)) {
+			return CRITIC_RISK_VALUE;
+		} else if (RiskCriticalityLevel.Serious.equals(monitoringRisk)) {
+			return ALERT_RISK_VALUE;
+		} else if (RiskCriticalityLevel.Minor.equals(monitoringRisk)) {
+			return LOW_ALERT_RISK_VALUE;
+		} else {
+			return LOWER_RISK_VALUE;
+		}
 	}
 	
 	/**
@@ -27,16 +38,17 @@ public class Risk {
 	 * @param riskCapnometer 
 	 * @return
 	 */
-	public Risk calculateRisk(Risk monitoringRiskCap, Risk monitoringRiskPO) {
+	static Risk getRiskValue(RiskCriticalityLevel monitoringRiskCap, RiskCriticalityLevel monitoringRiskPO) {
+		
 		
 		if (monitoringRiskPO.getValue() <= 2) {
-			return new Risk(Risk.LOW_ALERT_RISK_VALUE);
+			return Risk.LOW_ALERT_RISK_VALUE;
 		} else if (monitoringRiskPO.getValue() == 3) {
-			return new Risk(Risk.ALERT_RISK_VALUE);
+			return Risk.ALERT_RISK_VALUE;
 		} else if (monitoringRiskPO.getValue() == 4) {
-			return new Risk(Risk.CRITIC_RISK_VALUE);
+			return Risk.CRITIC_RISK_VALUE;
 		} else {
-			return new Risk(Risk.HIGHER_RISK_VALUE);
+			return Risk.HIGHTEST_RISK_VALUE;
 		}
 	}
 
@@ -47,28 +59,5 @@ public class Risk {
 	public void setValue(int value) {
 		this.finalValue = value;
 	}
-
-	@Override
-	public boolean equals(Object arg0) {
-		return this.finalValue == ((Risk)arg0).getValue();
-	}
-
-	public Risk getMonitoringRiskPO() {
-		return monitoringRiskPO;
-	}
-
-	public void setMonitoringRiskPO(Risk monitoringRiskPO) {
-		this.monitoringRiskPO = monitoringRiskPO;
-	}
-
-	public Risk getMonitoringRiskCap() {
-		return monitoringRiskCap;
-	}
-
-	public void setMonitoringRiskCap(Risk monitoringRiskCap) {
-		this.monitoringRiskCap = monitoringRiskCap;
-	}
-	
-	
 
 }

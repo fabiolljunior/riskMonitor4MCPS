@@ -10,7 +10,7 @@ import deviceManager.DeviceManager;
 import deviceManager.GenericPulseOximeter;
 import deviceManager.GenericRespirationMonitor;
 
-public class RiskCalculatorTest {
+public class TestRiskCalculatorPO {
 	
 	private RiskCalculator calculator = null;
 	
@@ -21,14 +21,14 @@ public class RiskCalculatorTest {
 		GenericPulseOximeter myPulseOximeter = mock(GenericPulseOximeter.class);
 		when(myPulseOximeter.getCurrentSpO2()).thenReturn(new Double(60));
 		when(myPulseOximeter.getCurrentHeartRate()).thenReturn(-1);
-		
 		when(deviceManager.getGenericPulseOximeter()).thenReturn(myPulseOximeter );
+		
 		GenericRespirationMonitor myRespirationMonitor = mock(GenericRespirationMonitor.class);
 		when(deviceManager.getGenericRespirationMonitor()).thenReturn(myRespirationMonitor );
 		
 		calculator = new RiskCalculator(deviceManager);
 		
-		assertEquals(calculator.calculateRiskPulseOximetry(),new Risk(5));
+		assertEquals(calculator.calculateRiskPulseOximetry(),RiskCriticalityLevel.Negligible);
 	}
 	
 	@Test
@@ -44,7 +44,7 @@ public class RiskCalculatorTest {
 		
 		calculator = new RiskCalculator(deviceManager);
 		
-		assertEquals(calculator.calculateRiskPulseOximetry(),new Risk(RiskCriticalityLevel.Critical.getValue()));
+		assertEquals(calculator.calculateRiskPulseOximetry(),RiskCriticalityLevel.Critical);
 	}
 	
 	@Test
@@ -60,7 +60,7 @@ public class RiskCalculatorTest {
 		
 		calculator = new RiskCalculator(deviceManager);
 		
-		assertEquals(calculator.calculateRiskPulseOximetry(),new Risk(RiskCriticalityLevel.Serious.getValue()));
+		assertEquals(calculator.calculateRiskPulseOximetry(),RiskCriticalityLevel.Serious);
 	}
 	
 	@Test
@@ -76,7 +76,7 @@ public class RiskCalculatorTest {
 		
 		calculator = new RiskCalculator(deviceManager);
 		
-		assertEquals(calculator.calculateRiskPulseOximetry(),new Risk(RiskCriticalityLevel.Minor.getValue()));
+		assertEquals(calculator.calculateRiskPulseOximetry(),(RiskCriticalityLevel.Minor));
 	}
 	
 	@Test
@@ -92,7 +92,7 @@ public class RiskCalculatorTest {
 		
 		calculator = new RiskCalculator(deviceManager);
 		
-		assertEquals(calculator.calculateRiskPulseOximetry(),new Risk(RiskCriticalityLevel.Negligible.getValue()));
+		assertEquals(calculator.calculateRiskPulseOximetry(),RiskCriticalityLevel.Negligible);
 	}
 
 }

@@ -30,9 +30,9 @@ public class TestRiskCalculationListener {
 		
 		calculator = new RiskCalculator(deviceManager);
 		
-		assertEquals(calculator.calculateRisk(),new Risk(25));
+		assertEquals(calculator.calculateRisk(),Risk.HIGHTEST_RISK_VALUE);
 		myPulseOximeter.setData(97f, Device.PULS_OXIM_SAT_O2);
-		assertEquals(calculator.calculateRiskPulseOximetry(),new Risk(5));
+		assertEquals(calculator.calculateRiskPulseOximetry(),RiskCriticalityLevel.Negligible);
 		
 	}
 

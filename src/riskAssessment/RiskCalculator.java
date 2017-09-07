@@ -46,15 +46,35 @@ public class RiskCalculator implements SPO2Observer, HRObserver, RRObserver, ETC
 	 * @return
 	 */
 	public Risk calculateRisk() {
-		Risk finalRisk = new Risk();
-		return finalRisk.calculateRisk(calculateRiskCapnography(),calculateRiskPulseOximetry());
+		
+		RiskCriticalityLevel calculatedCapnometetryRisk = calculateRiskCapnometry();
+		
+		RiskCriticalityLevel calculatedPulseOximetryRisk = calculateRiskPulseOximetry();
+		
+		if (calculatedCapnometetryRisk == null && calculatedPulseOximetryRisk == null) {
+			return null;
+		} else if (calculatedCapnometetryRisk == null) {
+			return Risk.getRisk(calculatedPulseOximetryRisk);
+		} else if (calculatedPulseOximetryRisk == null) {
+			return Risk.getRisk(calculatedCapnometetryRisk);
+		}		
+		
+		//Just getting the higher risk
+		return Risk.getRisk(
+				comparePORiskLevel(calculatedCapnometetryRisk,calculatedPulseOximetryRisk) ?
+						calculatedCapnometetryRisk : calculatedPulseOximetryRisk);
 	}
 	
-	public Risk calculateRiskCapnography() {
-		int respRate = respMonitor.getCurrentHeartRate();
+	public RiskCriticalityLevel calculateRiskCapnometry() {
+		int respRate = respMonitor.getCurrentRespirationRate();
 		double etco2 = respMonitor.getCurrentEtCO2();
 		RiskCriticalityLevel riskCriticalityLevelETCO2 = null;
 		RiskCriticalityLevel riskCriticalityLevelRR = null;
+		
+		if (respRate == GenericRespirationMonitor.INVALID_VALUE && etco2 == GenericRespirationMonitor.INVALID_VALUE) {
+//			throw new NotEnoughDataException("There is no available data for calculating the risk of respiration monitor");
+			return null;
+		}
 		
 		if (respRate != GenericRespirationMonitor.INVALID_VALUE) {
 			riskCriticalityLevelRR = RiskCriticalityLevel.getCriticalityLevelRR(respRate);
@@ -64,24 +84,27 @@ public class RiskCalculator implements SPO2Observer, HRObserver, RRObserver, ETC
 			riskCriticalityLevelETCO2 = RiskCriticalityLevel.getCriticalityLevelETCO2(etco2);
 		}
 		
-		int criticalValue = 0;
 		if (riskCriticalityLevelETCO2 != null && riskCriticalityLevelRR != null) {
 			//highest critical value
-			criticalValue = (comparePORiskLevel(riskCriticalityLevelETCO2, riskCriticalityLevelRR) ? riskCriticalityLevelETCO2.getValue(): riskCriticalityLevelRR.getValue()); 
+			return (comparePORiskLevel(riskCriticalityLevelETCO2, riskCriticalityLevelRR) ? riskCriticalityLevelETCO2: riskCriticalityLevelRR); 
 		} else if (riskCriticalityLevelETCO2 == null) {
-			criticalValue = riskCriticalityLevelRR.getValue();
+			return riskCriticalityLevelRR;
 		} else {
-			criticalValue = riskCriticalityLevelETCO2.getValue();
+			return riskCriticalityLevelETCO2;
 		}
 		
-		return new Risk(criticalValue);
 	}
 
-	public Risk calculateRiskPulseOximetry() {
+	public RiskCriticalityLevel calculateRiskPulseOximetry() {
 		int heartRate = pulseOximeter.getCurrentHeartRate();
 		double spo2 = pulseOximeter.getCurrentSpO2();
 		RiskCriticalityLevel riskCriticalityLevelSPO2 = null;
 		RiskCriticalityLevel riskCriticalityLevelHR = null;
+		
+		if (heartRate == GenericPulseOximeter.INVALID_VALUE && spo2 == GenericPulseOximeter.INVALID_VALUE) {
+//			throw new NotEnoughDataException("There is not enough data for calculating the risk for pulseOximetry");
+			return null;
+		}
 		
 		if (heartRate != GenericPulseOximeter.INVALID_VALUE) {
 			riskCriticalityLevelHR = RiskCriticalityLevel.getCriticalityLevelofHR(heartRate);
@@ -90,17 +113,14 @@ public class RiskCalculator implements SPO2Observer, HRObserver, RRObserver, ETC
 		if (spo2 != GenericPulseOximeter.INVALID_VALUE) {
 			riskCriticalityLevelSPO2 = RiskCriticalityLevel.getCriticalityLevelofSPO2(spo2);
 		}
-		int criticalValue = 0;
 		if (riskCriticalityLevelSPO2 != null && riskCriticalityLevelHR != null) {
 			//highest critical value
-			criticalValue = (comparePORiskLevel(riskCriticalityLevelSPO2, riskCriticalityLevelHR) ? riskCriticalityLevelSPO2.getValue(): riskCriticalityLevelHR.getValue()); 
+			return (comparePORiskLevel(riskCriticalityLevelSPO2, riskCriticalityLevelHR) ? riskCriticalityLevelSPO2: riskCriticalityLevelHR); 
 		} else if (riskCriticalityLevelSPO2 == null) {
-			criticalValue = riskCriticalityLevelHR.getValue();
+			return riskCriticalityLevelHR;
 		} else {
-			criticalValue = riskCriticalityLevelSPO2.getValue();
+			return riskCriticalityLevelSPO2;
 		}
-		
-		return new Risk(criticalValue);
 		
 	}
 

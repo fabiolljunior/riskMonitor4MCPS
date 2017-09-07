@@ -50,13 +50,13 @@ public enum RiskCriticalityLevel {
 	}
 	
 	static RiskCriticalityLevel getCriticalityLevelofHR(int hr) {
-		if (hr <= 75) {
+		if (hr < 40 && hr > 140) {
 			return RiskCriticalityLevel.Catastrophical;
-		} else if (hr > 75 && hr <= 85) {
+		} else if ((hr >= 40 && hr <= 45) || (hr > 130 && hr <= 140)) {
 			return RiskCriticalityLevel.Critical;
-		} else if (hr > 85 && hr <= 90) {
+		} else if ((hr > 45 && hr <= 51) || (hr > 120 && hr <= 130)) {
 			return RiskCriticalityLevel.Serious;
-		} else if (hr > 90 && hr <= 93) {
+		} else if ((hr >= 52 && hr <= 55) || (hr > 110 && hr <= 120)) {
 			return RiskCriticalityLevel.Minor;
 		} 
 		return RiskCriticalityLevel.Negligible;
@@ -76,13 +76,13 @@ public enum RiskCriticalityLevel {
 	}
 
 	public static RiskCriticalityLevel getCriticalityLevelETCO2(double etco2) {
-		if (etco2 != GenericRespirationMonitor.INVALID_VALUE && (etco2 > 50 || etco2 <= 25)) {
+		if (etco2 != GenericRespirationMonitor.INVALID_VALUE && (etco2 > 55 || etco2 <= 25)) {
 			return RiskCriticalityLevel.Catastrophical;
 		} else if ((etco2 <= 55 && etco2 > 50) || (etco2 <= 30 && etco2 > 25 )) {
 			return RiskCriticalityLevel.Critical;
 		} else if ((etco2 <= 50 && etco2 > 45) || (etco2 <= 35 && etco2 > 30 ) ) {
 			return RiskCriticalityLevel.Serious;
-		} else if (etco2 > 30 && etco2 <= 43) {
+		} else if (etco2 > 30 && etco2 <= 45) {
 			return RiskCriticalityLevel.Minor;
 		} 
 		return RiskCriticalityLevel.Negligible;
