@@ -142,6 +142,7 @@ public class OpenICEListener implements Runnable {
 								// System.out.println("Pulse Rate="+data.value);
 							}
 //							System.out.println(data);
+//							data.presentation_time.toString();
 							deviceManager.sendDaTa(data);
 						}
 

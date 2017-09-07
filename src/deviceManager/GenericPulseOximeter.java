@@ -20,24 +20,15 @@ public class GenericPulseOximeter extends GenericDevice implements SpO2Device, H
 	private List<HRObserver> hrObservers = new ArrayList<>();
 	
 	
-//	public boolean isAlive() {
-//		if (this.secondsWithoutData == TIME_TO_DEAD) {
-//			return false;
-//		}
-//		return true;
-//	}
-	
 	@Override
 	public void setData(float value, Device measurementType) {
 		setLastDataReceived(Calendar.getInstance());
 		
 		if (Device.PULS_OXIM_PULS_RATE.equals(measurementType)) {
 			currentHeartRate = Math.round(value);
-			//TODO: Notify the listeners
 			notifyHRListeners(currentHeartRate);
 		} else { // then Device.PULS_OXIM_SAT_O2
 			currentSpO2 = value;
-			//TODO: Notify the listeners
 			notifySPO2Listeners(currentSpO2);
 		}
 		

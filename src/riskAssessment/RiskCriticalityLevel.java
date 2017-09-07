@@ -1,5 +1,7 @@
 package riskAssessment;
 
+import deviceManager.GenericRespirationMonitor;
+
 public enum RiskCriticalityLevel {
 	
 	Negligible("Negligible",1),
@@ -47,7 +49,7 @@ public enum RiskCriticalityLevel {
 		return RiskCriticalityLevel.Negligible;
 	}
 	
-	static RiskCriticalityLevel getCriticalityLevelofHR(double hr) {
+	static RiskCriticalityLevel getCriticalityLevelofHR(int hr) {
 		if (hr <= 75) {
 			return RiskCriticalityLevel.Catastrophical;
 		} else if (hr > 75 && hr <= 85) {
@@ -55,6 +57,32 @@ public enum RiskCriticalityLevel {
 		} else if (hr > 85 && hr <= 90) {
 			return RiskCriticalityLevel.Serious;
 		} else if (hr > 90 && hr <= 93) {
+			return RiskCriticalityLevel.Minor;
+		} 
+		return RiskCriticalityLevel.Negligible;
+	}
+
+	public static RiskCriticalityLevel getCriticalityLevelRR(int respRate) {
+		if (respRate != GenericRespirationMonitor.INVALID_VALUE && respRate <= 1) {
+			return RiskCriticalityLevel.Catastrophical;
+		} else if (respRate > 1 && respRate <= 6) {
+			return RiskCriticalityLevel.Critical;
+		} else if (respRate > 6 && respRate <= 8) {
+			return RiskCriticalityLevel.Serious;
+		} else if (respRate > 8 && respRate <= 12) {
+			return RiskCriticalityLevel.Minor;
+		} 
+		return RiskCriticalityLevel.Negligible;
+	}
+
+	public static RiskCriticalityLevel getCriticalityLevelETCO2(double etco2) {
+		if (etco2 != GenericRespirationMonitor.INVALID_VALUE && (etco2 > 50 || etco2 <= 25)) {
+			return RiskCriticalityLevel.Catastrophical;
+		} else if ((etco2 <= 55 && etco2 > 50) || (etco2 <= 30 && etco2 > 25 )) {
+			return RiskCriticalityLevel.Critical;
+		} else if ((etco2 <= 50 && etco2 > 45) || (etco2 <= 35 && etco2 > 30 ) ) {
+			return RiskCriticalityLevel.Serious;
+		} else if (etco2 > 30 && etco2 <= 43) {
 			return RiskCriticalityLevel.Minor;
 		} 
 		return RiskCriticalityLevel.Negligible;

@@ -54,19 +54,15 @@ public class DeviceManager {
 				
 				if (deviceID.equals(Device.PULS_OXIM_PULS_RATE.getName())) {
 					this.getGenericPulseOximeter().setData(data.value, Device.PULS_OXIM_PULS_RATE);
-					//TODO: eu acho que é melhor confiar no clock do relógio do sistema, pode acontecer de receber mais de uma msg por segundo
 					
 				}  else if (deviceID.equals(Device.PULS_OXIM_SAT_O2.getName())) {
 					this.getGenericPulseOximeter().setData(data.value,Device.PULS_OXIM_SAT_O2);
-					//TODO: eu acho que é melhor confiar no clock do relógio do sistema, pode acontecer de receber mais de uma msg por segundo
 					
 				} else if (deviceID.equals(Device.RESP_MONITOR_RESP_RATE.getName())) {
 					this.getGenericRespirationMonitor().setData(data.value, Device.RESP_MONITOR_RESP_RATE);
-					//TODO: eu acho que é melhor confiar no clock do relógio do sistema, pode acontecer de receber mais de uma msg por segundo
 					
 				} else if (deviceID.equals(Device.RESP_MONITOR_ETCO2.getName())) {
 					this.getGenericRespirationMonitor().setData(data.value, Device.RESP_MONITOR_ETCO2);
-					//TODO: eu acho que é melhor confiar no clock do relógio do sistema, pode acontecer de receber mais de uma msg por segundo
 					
 				} else {
 					System.out.println("Device not registered!");
