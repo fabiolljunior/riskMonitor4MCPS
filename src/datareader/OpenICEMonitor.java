@@ -5,6 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import deviceManager.DeviceManager;
+import riskAssessment.RiskCalculator;
 
 /**
  * Classe que gerencia os possíveis listeners do openICE. Por enquanto teremos apenas um.
@@ -25,6 +26,7 @@ public class OpenICEMonitor {
 	private OpenICEMonitor() {
 		listener = new OpenICEListener();
 		listener.setDeviceManager(DeviceManager.getInstance());
+		new RiskCalculator(DeviceManager.getInstance());
 		executor = Executors.newFixedThreadPool(1);
 		executor.submit(listener);
 		executor.shutdown();

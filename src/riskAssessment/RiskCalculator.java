@@ -3,6 +3,7 @@ package riskAssessment;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+import datamanagement.GraphicDataManagment;
 import deviceManager.DeviceManager;
 import deviceManager.GenericPulseOximeter;
 import deviceManager.GenericRespirationMonitor;
@@ -23,6 +24,7 @@ public class RiskCalculator implements SPO2Observer, HRObserver, RRObserver, ETC
 	
 	public RiskCalculator() {
 		riskListeners = new ArrayList<>();
+		riskListeners.add(new GraphicDataManagment());
 		pulseOximeter = DeviceManager.getInstance().getGenericPulseOximeter();
 		respMonitor = DeviceManager.getInstance().getGenericRespirationMonitor();
 		pulseOximeter.registerHRObserver(this);
@@ -33,6 +35,7 @@ public class RiskCalculator implements SPO2Observer, HRObserver, RRObserver, ETC
 	
 	public RiskCalculator(DeviceManager deviceManager) {
 		riskListeners = new ArrayList<>();
+		riskListeners.add(new GraphicDataManagment());
 		pulseOximeter = deviceManager.getGenericPulseOximeter();
 		respMonitor = deviceManager.getGenericRespirationMonitor();
 		pulseOximeter.registerHRObserver(this);

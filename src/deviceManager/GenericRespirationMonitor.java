@@ -47,21 +47,28 @@ public class GenericRespirationMonitor extends GenericDevice implements RRObserv
 
 	@Override
 	public void notifyETCO2hasChanged(double newETCO2Value) {
-		for (ETCO2Observer etco2Observer : etco2Observers) {
-			etco2Observer.changeETCO2(newETCO2Value);
+		if (etco2Observers != null) {
+			for (ETCO2Observer etco2Observer : etco2Observers) {
+				etco2Observer.changeETCO2(newETCO2Value);
+			}
 		}
 	}
 
 	@Override
 	public void notifyRRhasChanged(int newRR) {
-		for (RRObserver rrObserver : rrObservers) {
-			rrObserver.changeRR(newRR);
+		if (this.rrObservers != null) {
+			for (RRObserver rrObserver : rrObservers) {
+				rrObserver.changeRR(newRR);
+			}
 		}
 		
 	}
 
 	@Override
 	public void registerRRObserver(RRObserver observer) {
+		if (this.rrObservers == null) {
+			this.rrObservers = new ArrayList<RRObserver>();
+		}
 		rrObservers.add(observer);
 	}
 
@@ -72,6 +79,9 @@ public class GenericRespirationMonitor extends GenericDevice implements RRObserv
 
 	@Override
 	public void registerETCO2Observer(ETCO2Observer observer) {
+		if (this.etco2Observers == null) {
+			this.etco2Observers = new ArrayList<ETCO2Observer>();
+		}
 		etco2Observers.add(observer);
 	}
 

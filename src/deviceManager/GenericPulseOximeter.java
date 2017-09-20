@@ -70,6 +70,9 @@ public class GenericPulseOximeter extends GenericDevice implements SpO2Device, H
 
 	@Override
 	public void registerSPO2Observer(SPO2Observer observer) {
+		if (this.spo2Observers == null) {
+			this.spo2Observers = new ArrayList<SPO2Observer>();
+		}
 		spo2Observers.add(observer);
 	}
 
@@ -80,6 +83,9 @@ public class GenericPulseOximeter extends GenericDevice implements SpO2Device, H
 
 	@Override
 	public void registerHRObserver(HRObserver observer) {
+		if (this.hrObservers == null) {
+			this.hrObservers = new ArrayList<HRObserver>();
+		}
 		hrObservers.add(observer);
 		
 	}
