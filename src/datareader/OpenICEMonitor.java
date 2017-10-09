@@ -23,10 +23,12 @@ public class OpenICEMonitor {
 	
 	private ExecutorService executor = null;
 	
+	private RiskCalculator riskCalculator;
+	
 	private OpenICEMonitor() {
 		listener = new OpenICEListener();
 		listener.setDeviceManager(DeviceManager.getInstance());
-		new RiskCalculator(DeviceManager.getInstance());
+		riskCalculator = new RiskCalculator(DeviceManager.getInstance());
 		executor = Executors.newFixedThreadPool(1);
 		executor.submit(listener);
 		executor.shutdown();
@@ -51,6 +53,8 @@ public class OpenICEMonitor {
 		
 		System.out.println("OpenICEMonitor.main() - creating the monitor...");
 		OpenICEMonitor monitor = OpenICEMonitor.getInstance();
+		DynamicLineChart.main(null);
+//		monitor.getRiskCalculator();
 		System.out.println("OpenICEMonitor.main() - monitor created ...");
 		// Pause for 30 seconds and force quitting the app (because we're
         // looping infinitely)
@@ -63,6 +67,14 @@ public class OpenICEMonitor {
         System.exit(0);
 		
 		
+	}
+
+	public RiskCalculator getRiskCalculator() {
+		return riskCalculator;
+	}
+
+	public void setRiskCalculator(RiskCalculator riskCalculator) {
+		this.riskCalculator = riskCalculator;
 	}
 
 }

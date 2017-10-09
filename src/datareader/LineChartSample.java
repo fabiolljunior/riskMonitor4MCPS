@@ -14,8 +14,6 @@ import riskAssessment.Risk;
 
 public class LineChartSample extends Application {
 	
-	private static List<Risk> risks;
-
 	@Override
 	public void start(Stage stage) {
 		stage.setTitle("Line Chart Sample");
@@ -59,13 +57,4 @@ public class LineChartSample extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-	
-	public static void addRisk(Risk r) {
-		if (risks == null) {
-			risks = new ArrayList<Risk>();
-		}
-		
-		risks.add(r);
-	}
-
 }

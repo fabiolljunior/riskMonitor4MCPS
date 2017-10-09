@@ -1,4 +1,9 @@
 package datareader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -13,22 +18,16 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.stage.Stage;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Random;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 public class DynamicLineChart extends Application {
 
-    ObservableList<XYChart.Data<String, Integer>> xyList1 = FXCollections.observableArrayList();
+    ObservableList<XYChart.Data<String, Number>> xyList1 = FXCollections.observableArrayList();
     ObservableList<XYChart.Data<String, Integer>> xyList2 = FXCollections.observableArrayList();
 
     ObservableList<String> myXaxisCategories = FXCollections.observableArrayList();
 
     int i;
     private Task<Date> task;
-    private LineChart<String,Number> lineChart;
+    private LineChart<String, Number> lineChart;
     private XYChart.Series xySeries1;
     private XYChart.Series xySeries2;
     private CategoryAxis xAxis;
@@ -36,7 +35,7 @@ public class DynamicLineChart extends Application {
 
     @Override public void start(Stage stage) {
 
-        xyList1.addListener((ListChangeListener<XYChart.Data<String, Integer>>) change -> {
+        xyList1.addListener((ListChangeListener<XYChart.Data<String, Number>>) change -> {
             if (change.getList().size() - lastObservedSize > 10) {
                 lastObservedSize += 10;
                 xAxis.getCategories().remove(0, 10);
@@ -45,12 +44,12 @@ public class DynamicLineChart extends Application {
 
         stage.setTitle("Line Chart Sample");
         xAxis = new CategoryAxis();
-        xAxis.setLabel("Month");
+        xAxis.setLabel("Time");
 
         final NumberAxis yAxis = new NumberAxis();
         lineChart = new LineChart<>(xAxis,yAxis);
 
-        lineChart.setTitle("Woohoo, 2010");
+        lineChart.setTitle("Risk");
         lineChart.setAnimated(false);
 
         task = new Task<Date>() {
@@ -75,16 +74,14 @@ public class DynamicLineChart extends Application {
 
         task.valueProperty().addListener(new ChangeListener<Date>() {
             SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
-            Random random = new Random();
 
             @Override
             public void changed(ObservableValue<? extends Date> observableValue, Date oldDate, Date newDate) {
 
                 String strDate = dateFormat.format(newDate);
                 myXaxisCategories.add(strDate);
-
-                xyList1.add(new XYChart.Data(strDate, Integer.valueOf(newDate.getMinutes() + random.nextInt(100500))));
-                xyList2.add(new XYChart.Data(strDate, Integer.valueOf(newDate.getMinutes() + random.nextInt(100500) - random.nextInt(10050))));
+                
+                xyList1.add(DataCollectionUtil.getInstance().getNewData());
 
             }
         });
@@ -100,10 +97,10 @@ public class DynamicLineChart extends Application {
         xySeries1 = new XYChart.Series(xyList1);
         xySeries1.setName("Series 1");
 
-        xySeries2 = new XYChart.Series(xyList2);
-        xySeries2.setName("Series 2");
+//        xySeries2 = new XYChart.Series(xyList2);
+//        xySeries2.setName("Series 2");
 
-        lineChart.getData().addAll(xySeries1, xySeries2);
+        lineChart.getData().addAll(xySeries1);
 
         i = 0;
 
@@ -116,6 +113,12 @@ public class DynamicLineChart extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args);
+    	try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	DynamicLineChart.launch(args);
     }
 }
