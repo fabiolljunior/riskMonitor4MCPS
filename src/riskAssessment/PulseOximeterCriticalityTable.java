@@ -7,6 +7,18 @@ package riskAssessment;
  */
 public class PulseOximeterCriticalityTable {
 	
+	private static PulseOximeterCriticalityTable instance = null;
+	
+	public static PulseOximeterCriticalityTable getInstance() {
+		if (instance == null) {
+			instance = new PulseOximeterCriticalityTable();
+		}
+		return instance;
+	}
+	
+	private PulseOximeterCriticalityTable() {
+		
+	}
 	
 	public double getCriticalityLevelofHR(int heartRate) {
 		return 0;

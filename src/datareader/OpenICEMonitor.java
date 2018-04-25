@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import deviceManager.DeviceManager;
 import riskAssessment.RiskCalculator;
+import riskAssessment.RiskCalculatorGeNIe;
 
 /**
  * Classe que gerencia os possíveis listeners do openICE. Por enquanto teremos apenas um.
@@ -23,12 +24,12 @@ public class OpenICEMonitor {
 	
 	private ExecutorService executor = null;
 	
-	private RiskCalculator riskCalculator;
+	private RiskCalculatorGeNIe riskCalculator;
 	
 	private OpenICEMonitor() {
 		listener = new OpenICEListener();
 		listener.setDeviceManager(DeviceManager.getInstance());
-		riskCalculator = new RiskCalculator(DeviceManager.getInstance());
+		riskCalculator = new RiskCalculatorGeNIe(DeviceManager.getInstance());
 		executor = Executors.newFixedThreadPool(1);
 		executor.submit(listener);
 		executor.shutdown();
@@ -69,11 +70,11 @@ public class OpenICEMonitor {
 		
 	}
 
-	public RiskCalculator getRiskCalculator() {
+	public RiskCalculatorGeNIe getRiskCalculator() {
 		return riskCalculator;
 	}
 
-	public void setRiskCalculator(RiskCalculator riskCalculator) {
+	public void setRiskCalculator(RiskCalculatorGeNIe riskCalculator) {
 		this.riskCalculator = riskCalculator;
 	}
 

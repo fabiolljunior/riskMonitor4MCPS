@@ -8,7 +8,7 @@ public enum RiskCriticalityLevel {
 	Minor("Minor",2),
 	Serious("Serious",3),
 	Critical("Critical",4),
-	Catastrophical("Catastrophical",5);
+	Catastrophical("Catastrophic",5);
 	
 	private String name;
 	private int value;

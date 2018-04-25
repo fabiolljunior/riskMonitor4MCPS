@@ -2,13 +2,19 @@ package riskAssessment;
 
 public enum Risk {
 	
-	LOWER_RISK_VALUE(0),
-	LOW_ALERT_RISK_VALUE(4),
-	ALERT_RISK_VALUE(9),
-	CRITIC_RISK_VALUE(12),
-	HIGHTEST_RISK_VALUE(25);
+	LOWER_RISK_VALUE(0,"Negligible"),
+	LOW_ALERT_RISK_VALUE(4,"Minor"),
+	ALERT_RISK_VALUE(9,"Serious"),
+	CRITIC_RISK_VALUE(12,"Critical"),
+	HIGHTEST_RISK_VALUE(25,"Catastrophic");
 	
 	private int finalValue;
+	private String name;
+	
+	Risk(int value, String name) {
+		this.finalValue = value;
+		this.name = name;
+	}
 	
 	Risk(int value) {
 		this.finalValue = value;
@@ -58,6 +64,14 @@ public enum Risk {
 
 	public void setValue(int value) {
 		this.finalValue = value;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

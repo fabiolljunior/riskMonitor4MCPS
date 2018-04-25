@@ -9,6 +9,9 @@ import org.junit.Test;
 import deviceManager.DeviceManager;
 import deviceManager.GenericPulseOximeter;
 import deviceManager.GenericRespirationMonitor;
+import riskAssessment.Risk;
+import riskAssessment.RiskCalculator;
+import riskAssessment.RiskCriticalityLevel;
 import util.Device;
 
 public class TestRiskCalculationListener {
