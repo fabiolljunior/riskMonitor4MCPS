@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
+	<properties>
+		<property id="DIAG_alphaValue">1.50000000</property>
+		<property id="DIAG_maxAlphaValue">10.00000000</property>
+		<property id="DIAG_prefs">267</property>
+	</properties>
+	<nodes>
+		<cpt id="CPT_Safety_Guarantees" diagtype="observation" ranked="true">
+			<state id="SIL_A" />
+			<state id="SIL_B" />
+			<state id="SIL_C" />
+			<state id="SIL_D" />
+			<state id="OFF" />
+			<state id="QM" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666665</probabilities>
+		</cpt>
+		<cpt id="HR_sensor_Value" diagtype="observation" ranked="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="heart_rate" target="true" diagtype="observation" ranked="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>CPT_Safety_Guarantees HR_sensor_Value</parents>
+			<probabilities>0.8 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.8 0.83 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.83 0.86 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.86 0.9 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.9 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.77 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.77</probabilities>
+			<property id="guarantee_time_omission">SIL D</property>
+		</cpt>
+		<cpt id="SPO2_sensor_value" diagtype="observation" ranked="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="SPO2_Safety_Guarantees" diagtype="observation" ranked="true">
+			<state id="SIL_A" />
+			<state id="SIL_B" />
+			<state id="SIL_C" />
+			<state id="SIL_D" />
+			<state id="OFF" />
+			<state id="QM" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666665</probabilities>
+		</cpt>
+		<cpt id="SpO2" target="true" diagtype="observation" ranked="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>SPO2_Safety_Guarantees SPO2_sensor_value</parents>
+			<probabilities>0.8 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.8 0.83 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.83 0.86 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.86 0.9 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.9 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.77 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.77</probabilities>
+		</cpt>
+		<cpt id="Pulse_Oximetry" target="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>heart_rate SpO2</parents>
+			<probabilities>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0.6 0.4 0 0 0 0.5 0.2 0.3 0 0 0.5 0.1 0.1 0.3 1 0 0 0 0 0 0.6 0.4 0 0 0 0 1 0 0 0 0 0.6 0.4 0 0 0 0.5 0.2 0.3 1 0 0 0 0 0 0.5 0.2 0.3 0 0 0 0.6 0.4 0 0 0 0 1 0 0 0 0 0.6 0.4 1 0 0 0 0 0 0.5 0.1 0.1 0.3 0 0 0.5 0.2 0.3 0 0 0 0.6 0.4 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="RR_sensors_value" diagtype="observation" ranked="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="RR_Safety_Guarantees">
+			<state id="SIL_A" />
+			<state id="SIL_B" />
+			<state id="SIL_C" />
+			<state id="SIL_D" />
+			<state id="OFF" />
+			<state id="QM" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666665</probabilities>
+		</cpt>
+		<cpt id="Respiration_Rate" target="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>RR_Safety_Guarantees RR_sensors_value</parents>
+			<probabilities>0.8 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.8 0.83 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.83 0.86 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.86 0.9 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.9 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.77 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.77</probabilities>
+		</cpt>
+		<cpt id="EtCO2_sensors_value" diagtype="observation" ranked="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<probabilities>0.2 0.2 0.2 0.2 0.2000000000000001</probabilities>
+		</cpt>
+		<cpt id="EtCO2_Safety_Guarantees">
+			<state id="SIL_A" />
+			<state id="SIL_B" />
+			<state id="SIL_C" />
+			<state id="SIL_D" />
+			<state id="OFF" />
+			<state id="QM" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666665</probabilities>
+		</cpt>
+		<cpt id="EtCO2" target="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>EtCO2_Safety_Guarantees EtCO2_sensors_value</parents>
+			<probabilities>0.8 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.6 0.2 0 0 0 0.2 0.8 0.83 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.66 0.17 0 0 0 0.17 0.83 0.86 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.72 0.14 0 0 0 0.14 0.86 0.9 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.8 0.1 0 0 0 0.1 0.9 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.77 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.54 0.23 0 0 0 0.23 0.77</probabilities>
+		</cpt>
+		<cpt id="Capnometry" target="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>Respiration_Rate EtCO2</parents>
+			<probabilities>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0.7 0.3 0 0 0 0.7 0.1 0.2 0 0 0.6 0.1 0.1 0.2 1 0 0 0 0 0 0.7 0.3 0 0 0 0 1 0 0 0 0 0.7 0.3 0 0 0 0.7 0.1 0.2 1 0 0 0 0 0 0.7 0.1 0.2 0 0 0 0.7 0.3 0 0 0 0 1 0 0 0 0 0.6 0.4 1 0 0 0 0 0 0.6 0.1 0.1 0.2 0 0 0.7 0.1 0.2 0 0 0 0.6 0.4 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Monitoring_vital_signs" target="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>Pulse_Oximetry Capnometry</parents>
+			<probabilities>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0.6 0.4 0 0 0 0.5 0.2 0.3 0 0 0.5 0.1 0.1 0.3 1 0 0 0 0 0 0.7 0.3 0 0 0 0 1 0 0 0 0 0.6 0.4 0 0 0 0.6 0.15 0.25 1 0 0 0 0 0 0.7 0.1 0.2 0 0 0 0.7 0.3 0 0 0 0 1 0 0 0 0 0.5 0.5 1 0 0 0 0 0 0.6 0.1 0.1 0.2 0 0 0.7 0.1 0.2 0 0 0 0.5 0.5 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="O2_supplement" diagtype="observation" ranked="true">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<state id="None" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="Taking_other_medications" diagtype="observation" ranked="true">
+			<state id="Yes" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="x_DA__Amount" diagtype="observation" ranked="true">
+			<state id="Low" />
+			<state id="Moderate" />
+			<state id="High" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333334</probabilities>
+		</cpt>
+		<cpt id="Consciousness_level">
+			<state id="Minor_Alert" />
+			<state id="Negligible_Alert" />
+			<state id="Serious_voice_responsive" />
+			<state id="Critical_pain_responsive" />
+			<state id="Catastrophic_Unresponsive" />
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Aditional_Treatment" target="true">
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>O2_supplement Taking_other_medications</parents>
+			<probabilities>1 0 0 0.8 0.2 0 0.3 0.7 0 0.4 0.4 0.2 0.5 0.3 0.2 0.2 0.5 0.3 0.1 0.4 0.5 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Pain_level">
+			<state id="No_Pain" />
+			<state id="Mild_Pain" />
+			<state id="Moderate_Pain" />
+			<state id="Severe_Pain" />
+			<probabilities>0.5 0.5 0 0</probabilities>
+		</cpt>
+		<cpt id="Respiratory_assesssment">
+			<state id="Negligible" />
+			<state id="Minor" />
+			<state id="Serious" />
+			<state id="Critical" />
+			<state id="Catastrophic" />
+			<probabilities>0.5 0.5 0 0 0</probabilities>
+		</cpt>
+		<cpt id="Clinical_Assessment">
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>Pain_level Consciousness_level Respiratory_assesssment</parents>
+			<probabilities>0 0 1 0 0 1 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0 0 1 0 0 1 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0 0 1 0 0 1 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0 0 1 0 0 1 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333334</probabilities>
+		</cpt>
+		<cpt id="Weight">
+			<state id="Underweight" />
+			<state id="Normal" />
+			<state id="Overweight" />
+			<state id="Obesity_I" />
+			<state id="Obesity_II" />
+			<state id="Obesity_III" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="Apnea">
+			<state id="Yes" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Age">
+			<state id="no_risk_age" />
+			<state id="risk_age" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Patient_history">
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>Weight Apnea Age</parents>
+			<probabilities>0.1 0.3 0.6 0.2 0.6 0.2 0 0 1 0.1 0.2 0.7 0.1 0.3 0.6 0.2 0.6 0.2 0 0 1 0.1 0.2 0.7 0.3 0.5 0.2 0.5 0.3 0.2 0.2 0.3 0.5 0.2 0.5 0.3 0.8 0.2 0 1 0 0 0.5 0.3 0.2 0.5 0.3 0.2 0.8 0.2 0 1 0 0 0.5 0.3 0.2 0.5 0.3 0.2 0.8 0.2 0 1 0 0 0.5 0.3 0.2 0.5 0.3 0.2</probabilities>
+		</cpt>
+		<cpt id="lockout_interval" diagtype="observation" ranked="true">
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333334</probabilities>
+		</cpt>
+		<cpt id="EtCO2_Timing_Omission" diagtype="observation" ranked="true">
+			<state id="SIL_A" />
+			<state id="SIL_B" />
+			<state id="SIL_C" />
+			<state id="SIL_D" />
+			<state id="No_Guarantee" />
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Joint_Function_funtion_peformance">
+			<state id="SIL_A" />
+			<state id="SIL_B" />
+			<state id="SIL_C" />
+			<state id="SIL_D" />
+			<state id="QM" />
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="System_actuation_parameters" target="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>x_DA__Amount lockout_interval</parents>
+			<probabilities>0 0 0.25 0.5 0.25 0 0 0 0.5 0.5 0 0 0 0 1 0 0 0.25 0.75 0 0 0 0.25 0.5 0.25 0 0 0 0.5 0.5 0 0 0.75 0.25 0 0 0 0.5 0.5 0 0 0 0.25 0.5 0.25</probabilities>
+		</cpt>
+		<cpt id="Dynamic_data" target="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>Monitoring_vital_signs System_actuation_parameters</parents>
+			<probabilities>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0.5 0.5 0 0 0 0 1 0 0 0 0 0.9 0.1 0 0 0 0.9 0.05 0.05 1 0 0 0 0 0 0.5 0.1 0.4 0 0 0 0.5 0.5 0 0 0 0 1 0 0 0 0 0.6 0.4 1 0 0 0 0 0 0.5 0.1 0.1 0.3 0 0 0.5 0.1 0.4 0 0 0 0.4 0.6 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Static_data" target="true">
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>Aditional_Treatment Clinical_Assessment Patient_history</parents>
+			<probabilities>1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Overall_patient_context" target="true">
+			<state id="Catastrophic" />
+			<state id="Critical" />
+			<state id="Serious" />
+			<state id="Minor" />
+			<state id="Negligible" />
+			<parents>Static_data Dynamic_data</parents>
+			<probabilities>1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0.3 0.7 0 0 0 0.2 0.3 0.5 1 0 0 0 0 0 1 0 0 0 0 0 0.8 0.1 0.1 0 0 0 1 0 0 0 0 0.2 0.8 1 0 0 0 0 0 1 0 0 0 0 0 0.8 0.1 0.1 0 0 0 0.4 0.6 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="RD_Risk" target="true" diagtype="target" ranked="true">
+			<state id="Acceptable" fault="true" />
+			<state id="Unacceptable" fault="true" />
+			<parents>Overall_patient_context Joint_Function_funtion_peformance</parents>
+			<probabilities>0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0.1 0.9 0 1 0 1 0 1 0.05 0.95 0.1 0.9 0 1 0.5 0.5 0.6 0.4 0.7 0.3 0.9 0.1 0.3 0.7 0.9 0.1 1 0 1 0 1 0 0.8 0.2</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2118.0 ACADEMIC" name="RiskMonitoringNetMCPS" faultnameformat="nodestate">
+			<node id="heart_rate">
+				<name>Heart Rate</name>
+				<interior color="99ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1756 755 1828 785</position>
+				<barchart active="true" width="158" height="126" />
+			</node>
+			<node id="RD_Risk" faultnameformat="user">
+				<name>RD Risk</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2242 61 2345 91</position>
+				<barchart active="true" width="128" height="54" />
+			</node>
+			<textbox>
+				<caption>P2 - Probability of the patient having infusion when he/she should not to</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>2072 10 2244 38</position>
+			</textbox>
+			<node id="SpO2">
+				<name>SpO2</name>
+				<interior color="99ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1980 755 2025 783</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Respiration_Rate">
+				<name>Respiration Rate</name>
+				<interior color="99ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2183 749 2272 798</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="EtCO2">
+				<name>EtCO2</name>
+				<interior color="99ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2393 758 2441 788</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Pulse_Oximetry">
+				<name>Pulse Oximetry</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1873 567 1957 619</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Capnometry">
+				<name>Capnometry</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2251 602 2322 646</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Monitoring_vital_signs">
+				<name>Monitoring vital signs</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2065 461 2141 508</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Aditional_Treatment">
+				<name>Additional treatment aspects</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2784 362 2871 423</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Taking_other_medications">
+				<name>Taking other medications</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2756 490 2854 551</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="O2_supplement">
+				<name>O2 supplement</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2918 490 3002 542</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="x_DA__Amount">
+				<name>(DA) Amount x (DCr) Drug criticality</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2509 585 2653 648</position>
+				<barchart active="true" width="185" height="72" />
+			</node>
+			<node id="CPT_Safety_Guarantees">
+				<name>HR Safety Guarantees</name>
+				<interior color="c0c0c0" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1400 909 1482 960</position>
+				<barchart active="true" width="146" height="126" />
+			</node>
+			<node id="Patient_history">
+				<name>Patient history</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>3305 314 3385 364</position>
+			</node>
+			<node id="Clinical_Assessment">
+				<name>Clinical Assessment</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>3110 359 3216 425</position>
+			</node>
+			<node id="HR_sensor_Value">
+				<name>Measured Sensor Value</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1609 911 1702 969</position>
+				<barchart active="true" width="176" height="108" />
+			</node>
+			<node id="System_actuation_parameters">
+				<name>System actuation parameters</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2581 447 2678 507</position>
+				<barchart active="true" width="160" height="108" />
+			</node>
+			<node id="Consciousness_level">
+				<name>Consciousness level</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>3103 484 3179 535</position>
+			</node>
+			<node id="Respiratory_assesssment">
+				<name>Respiratory assesssment</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>3193 478 3281 533</position>
+			</node>
+			<node id="Pain_level">
+				<name>Pain level</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>3042 451 3101 487</position>
+			</node>
+			<node id="Apnea">
+				<name>Apnea</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>3377 465 3426 495</position>
+			</node>
+			<node id="Weight">
+				<name>Weight</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>3309 462 3358 492</position>
+			</node>
+			<node id="Age">
+				<name>Age</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>3445 455 3509 495</position>
+			</node>
+			<node id="lockout_interval">
+				<name>lockout interval</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2727 601 2818 657</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="SPO2_sensor_value">
+				<name>SPO2_sensors value</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1785 912 1878 970</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="RR_sensors_value">
+				<name>RR_sensors value</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2344 929 2443 990</position>
+				<barchart active="true" width="128" height="126" />
+			</node>
+			<node id="EtCO2_sensors_value">
+				<name>EtCO2_sensors value</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2534 941 2632 1002</position>
+				<barchart active="true" width="128" height="126" />
+			</node>
+			<node id="Overall_patient_context">
+				<name>Overall patient context</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2364 157 2466 220</position>
+				<barchart active="true" width="150" height="108" />
+			</node>
+			<node id="Static_data">
+				<name>Static data</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2626 239 2690 279</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Dynamic_data">
+				<name>Dynamic data</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2372 332 2448 379</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Joint_Function_funtion_peformance">
+				<name>Joint funtion peformance</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2168 158 2269 221</position>
+				<barchart active="true" width="145" height="108" />
+			</node>
+			<node id="SPO2_Safety_Guarantees">
+				<name>SPO2 Safety Guarantees</name>
+				<interior color="c0c0c0" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1961 923 2043 974</position>
+				<barchart active="true" width="136" height="126" />
+			</node>
+			<node id="EtCO2_Timing_Omission">
+				<name>EtCO2 Timing Omission</name>
+				<interior color="c0c0c0" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>62 1105 150 1160</position>
+				<barchart width="161" height="108" />
+			</node>
+			<node id="EtCO2_Safety_Guarantees">
+				<name>EtCO2 Safety Guarantees</name>
+				<interior color="c0c0c0" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2723 944 2805 995</position>
+				<barchart active="true" width="146" height="126" />
+			</node>
+			<node id="RR_Safety_Guarantees">
+				<name>RR Safety Guarantees</name>
+				<interior color="c0c0c0" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2168 939 2250 990</position>
+				<barchart active="true" width="146" height="126" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
