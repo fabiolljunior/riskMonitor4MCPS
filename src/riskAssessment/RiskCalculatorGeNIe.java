@@ -59,6 +59,18 @@ public class RiskCalculatorGeNIe implements SPO2Observer, HRObserver, RRObserver
 		this.currentriskLevel = bbnHandler.updateSpO2(value);
 		notifyRiskChange(currentriskLevel);
 	}
+	
+	@Override
+	public void changeETCO2(double newETCO2Value) {
+		this.currentriskLevel = bbnHandler.updateEtCO2(newETCO2Value);
+		notifyRiskChange(this.currentriskLevel);
+	}
+
+	@Override
+	public void changeRR(int newRespRate) {
+		this.currentriskLevel = bbnHandler.updateRespirationRate(newRespRate);
+		notifyRiskChange(this.currentriskLevel);
+	}
 
 	public GenericPulseOximeter getPulseOximeter() {
 		return pulseOximeter;
@@ -82,18 +94,6 @@ public class RiskCalculatorGeNIe implements SPO2Observer, HRObserver, RRObserver
 
 	public void setCurrentriskLevel(Risk currentriskLevel) {
 		this.currentriskLevel = currentriskLevel;
-	}
-
-	@Override
-	public void changeETCO2(double newETCO2Value) {
-		this.currentriskLevel = bbnHandler.updateEtCO2(newETCO2Value);
-		notifyRiskChange(this.currentriskLevel);
-	}
-
-	@Override
-	public void changeRR(int newRespRate) {
-		this.currentriskLevel = bbnHandler.updateRespirationRate(newRespRate);
-		notifyRiskChange(this.currentriskLevel);
 	}
 
 	@Override

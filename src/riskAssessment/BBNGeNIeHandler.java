@@ -43,7 +43,8 @@ public class BBNGeNIeHandler {
 
 		// TODO: set all the current evidences
 		updateScenarioInitial();
-		updateConfigurationSILA();
+//		updateConfigurationSILA();
+		updateConfigurationSILC();
 	}
 
 	private void updateScenarioInitial() {
@@ -60,35 +61,47 @@ public class BBNGeNIeHandler {
 		net.setEvidence(ET_CO2_SAFETY_GUARANTEES_NODENAME, "OFF");
 		net.setEvidence(JOINT_FUNCTION_FUNTION_PEFORMANCE_NODENAME, "SIL_A");
 	}
+	
+	private void updateConfigurationSILC() {
+		net.setEvidence(CPT_SAFETY_GUARANTEES_NODENAME, "SIL_C");
+		net.setEvidence(SPO2_SAFETY_GUARANTEES_NODENAME, "SIL_C");
+		net.setEvidence(RR_SAFETY_GUARANTEES_NODENAME, "SIL_C");
+		net.setEvidence(ET_CO2_SAFETY_GUARANTEES_NODENAME, "SIL_C");
+		net.setEvidence(JOINT_FUNCTION_FUNTION_PEFORMANCE_NODENAME, "SIL_C");
+	}
 
 	public Risk updateHR(int value) {
-//		net.clearEvidence(HR_SENSOR_VALUE_NODE_NAME);
-//		RiskCriticalityLevel criticLevel = PulseOximeterCriticalityTable.getInstance().getCriticalityLevelofSPO2(value);
-		net.setEvidence(HR_SENSOR_VALUE_NODE_NAME, RiskCriticalityLevel.Negligible.getName());
+		RiskCriticalityLevel criticLevel = HRCriticalityTable.getInstance().getCriticalityLevelofHR(value);
+		System.out.println("BBNGeNIeHandler.updateHR() - vai atualizar: " + value + " critic level: " + criticLevel.getName());
+		net.setEvidence(HR_SENSOR_VALUE_NODE_NAME, criticLevel.getName());
 		net.updateBeliefs();
 		return updateRisk();
 		
 	}
 	
 	public Risk updateSpO2(double value) {
-		System.out.println("BBNGeNIeHandler.updateSpO2() vair atualizar... " + value);
-//		net.clearEvidence(SPO2_SENSOR_VALUE_NODENAME);
 		RiskCriticalityLevel criticLevel = PulseOximeterCriticalityTable.getInstance().getCriticalityLevelofSPO2(value);
+		System.out.println("BBNGeNIeHandler.updateSPO2() - vai atualizar: " + value + " critic level: " + criticLevel.getName());
 		net.setEvidence(SPO2_SENSOR_VALUE_NODENAME, criticLevel.getName());
 		net.updateBeliefs();
-		System.out.println("BBNGeNIeHandler.updateSpO2() atualizou... ");
 		return updateRisk();
 		
 	}
 	
 	public Risk updateRespirationRate(int value) {
-		net.setEvidence(RR_SENSORS_VALUE_NODE_NAME, value+"");
+		RiskCriticalityLevel criticLevel = RRCriticalityTable.getInstance().getCriticalityLevelRR(value);
+		System.out.println("BBNGeNIeHandler.updateRR() - vai atualizar: " + value + " critic level: " + criticLevel.getName());
+		net.setEvidence(RR_SENSORS_VALUE_NODE_NAME, criticLevel.getName());
+		net.updateBeliefs();
 		return updateRisk();
 		
 	}
 	
 	public Risk updateEtCO2(double value) {
-		net.setEvidence(ETCO2_SENSORS_VALUE_NODE_NAME, value+"");
+		RiskCriticalityLevel criticLevel = EtCO2CriticalityTable.getInstance().getCriticalityLevelEtCO2(value);
+		System.out.println("BBNGeNIeHandler.updateEtCO2() - vai atualizar: " + value + " critic level: " + criticLevel.getName());
+		net.setEvidence(ETCO2_SENSORS_VALUE_NODE_NAME, criticLevel.getName());
+		net.updateBeliefs();
 		return updateRisk();
 		
 	}
@@ -120,12 +133,12 @@ public class BBNGeNIeHandler {
 				double[] aValues = net.getNodeValue(OVP_NODE_NAME);
 				double minorOccurrences = aValues[outcomeIndex];
 				System.out.println("BBNGeNIeHandler.updateRisk() - minor: " + minorOccurrences);
-				currentRisk += minorOccurrences*40;
+				currentRisk += minorOccurrences*45;
 			} else if ("Negligible".equals(aForecastOutcomeIds[outcomeIndex])) {
 				double[] aValues = net.getNodeValue(OVP_NODE_NAME);
 				double negligibleOccurrences = aValues[outcomeIndex];
 				System.out.println("BBNGeNIeHandler.updateRisk() - Negligible: " + negligibleOccurrences);
-				currentRisk += negligibleOccurrences*20;
+				currentRisk += negligibleOccurrences*25;
 			}
 		}
 		
@@ -142,7 +155,7 @@ public class BBNGeNIeHandler {
 		} else if (currentRisk < 30 && currentRisk >= 0) {
 			current = Risk.LOWER_RISK_VALUE; 
 		}
-		System.out.println("BBNGeNIeHandler.updateRisk() novo valor do risco: " + current);
+		System.out.println("BBNGeNIeHandler.updateRisk() novo valor do risco: " + current.getName());
 		System.out.println("BBNGeNIeHandler.updateRisk() currentRisk: " + currentRisk);
 		return current;
 	}

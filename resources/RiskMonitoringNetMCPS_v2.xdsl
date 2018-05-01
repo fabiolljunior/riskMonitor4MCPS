@@ -226,14 +226,6 @@
 			<state id="High" />
 			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333334</probabilities>
 		</cpt>
-		<cpt id="EtCO2_Timing_Omission" diagtype="observation" ranked="true">
-			<state id="SIL_A" />
-			<state id="SIL_B" />
-			<state id="SIL_C" />
-			<state id="SIL_D" />
-			<state id="No_Guarantee" />
-			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
-		</cpt>
 		<cpt id="Joint_Function_funtion_peformance">
 			<state id="SIL_A" />
 			<state id="SIL_B" />
@@ -537,14 +529,6 @@
 				<font color="000000" name="Arial" size="8" />
 				<position>1961 923 2043 974</position>
 				<barchart active="true" width="136" height="126" />
-			</node>
-			<node id="EtCO2_Timing_Omission">
-				<name>EtCO2 Timing Omission</name>
-				<interior color="c0c0c0" />
-				<outline color="000080" />
-				<font color="000000" name="Arial" size="8" />
-				<position>62 1105 150 1160</position>
-				<barchart width="161" height="108" />
 			</node>
 			<node id="EtCO2_Safety_Guarantees">
 				<name>EtCO2 Safety Guarantees</name>
