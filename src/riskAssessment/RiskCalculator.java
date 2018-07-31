@@ -36,6 +36,7 @@ public class RiskCalculator implements SPO2Observer, HRObserver, RRObserver, ETC
 	public RiskCalculator(DeviceManager deviceManager) {
 		riskListeners = new ArrayList<>();
 		riskListeners.add(new GraphicDataManagment());
+//		riskListeners.add(new RiskAlarmsManagement());
 		pulseOximeter = deviceManager.getGenericPulseOximeter();
 		respMonitor = deviceManager.getGenericRespirationMonitor();
 		pulseOximeter.registerHRObserver(this);

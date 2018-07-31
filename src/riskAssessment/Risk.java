@@ -10,10 +10,17 @@ public enum Risk {
 	
 	private int finalValue;
 	private String name;
+	private double riskvalue;
 	
 	Risk(int value, String name) {
 		this.finalValue = value;
 		this.name = name;
+	}
+	
+	Risk(int value, String name, double riskValue) {
+		this.finalValue = value;
+		this.name = name;
+		this.riskvalue = riskValue;
 	}
 	
 	Risk(int value) {
@@ -72,6 +79,14 @@ public enum Risk {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public double getRiskvalue() {
+		return riskvalue;
+	}
+
+	public void setRiskvalue(double riskvalue) {
+		this.riskvalue = riskvalue;
 	}
 
 }

@@ -14,21 +14,21 @@ public class DataCollectionUtil {
 	private static SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 	
 	private static DataCollectionUtil singleton = null;
-	private static XYChart.Series<String, Number> seriesChina = new XYChart.Series<String, Number>();
-	private static Data<String, Number> newData = new XYChart.Data<String, Number>();
+	private static XYChart.Series<String, String> seriesChina = new XYChart.Series<String, String>();
+	private static Data<String, String> newData = new XYChart.Data<String, String>();
 	
 	
 	public static void addData(Risk newRisk, long currentTimeMilis) {
 		Date d = new Date(currentTimeMilis);
 		String strDate = dateFormat.format(d);
 		
-		newData = new XYChart.Data<String, Number>(strDate, newRisk.getValue());
+		newData = new XYChart.Data<String, String>(strDate, newRisk.getName());
 		seriesChina.getData().add(newData);
 	}
 	
-	public static ObservableList<XYChart.Series<String, Number>> getSeries() 
+	public static ObservableList<XYChart.Series<String, String>> getSeries() 
 	{
-		seriesChina = new XYChart.Series<String, Number>();
+		seriesChina = new XYChart.Series<String, String>();
 		seriesChina.setName("China");
 //		seriesChina.getData().add(new XYChart.Data<Number, Number>(1950, 555));
 //		seriesChina.getData().add(new XYChart.Data<Number, Number>(2000, 1275));
@@ -36,8 +36,8 @@ public class DataCollectionUtil {
 //		seriesChina.getData().add(new XYChart.Data<Number, Number>(2100, 1182));
 //		seriesChina.getData().add(new XYChart.Data<Number, Number>(2150, 1149));
 		
-		ObservableList<XYChart.Series<String, Number>> data =
-			FXCollections.<XYChart.Series<String, Number>>observableArrayList();
+		ObservableList<XYChart.Series<String, String>> data =
+			FXCollections.<XYChart.Series<String, String>>observableArrayList();
 		data.add(seriesChina);
 		return data;
 	}
@@ -49,11 +49,11 @@ public class DataCollectionUtil {
 		return singleton;
 	}
 
-	public static Data<String, Number> getNewData() {
+	public static Data<String, String> getNewData() {
 		return newData;
 	}
 
-	public static void setNewData(XYChart.Data<String, Number> teste) {
+	public static void setNewData(XYChart.Data<String, String> teste) {
 		DataCollectionUtil.newData = teste;
 	}
 

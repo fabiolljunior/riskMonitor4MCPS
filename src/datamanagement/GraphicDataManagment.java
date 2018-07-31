@@ -13,8 +13,8 @@ public class GraphicDataManagment implements RiskObserver {
 
 	@Override
 	public void notifyRiskChange(Risk newRisk, long currentTimeMilis) {
-		System.out.println(newRisk.getValue());
-		System.out.println(currentTimeMilis);
+//		System.out.println(newRisk.getValue());
+//		System.out.println(currentTimeMilis);
 		
 		this.mapa.put(currentTimeMilis, newRisk);
 		DataCollectionUtil.getInstance().addData(newRisk, currentTimeMilis);

@@ -5,6 +5,8 @@ import org.mdpnp.rtiapi.qos.IceQos;
 
 import com.rti.dds.domain.DomainParticipant;
 import com.rti.dds.domain.DomainParticipantFactory;
+import com.rti.dds.domain.builtin.ParticipantBuiltinTopicData;
+import com.rti.dds.domain.builtin.ParticipantBuiltinTopicDataDataReader;
 import com.rti.dds.infrastructure.RETCODE_NO_DATA;
 import com.rti.dds.infrastructure.ResourceLimitsQosPolicy;
 import com.rti.dds.infrastructure.StatusKind;
@@ -20,6 +22,7 @@ import com.rti.dds.subscription.SampleInfoSeq;
 import com.rti.dds.subscription.SampleLostStatus;
 import com.rti.dds.subscription.SampleRejectedStatus;
 import com.rti.dds.subscription.SampleStateKind;
+import com.rti.dds.subscription.Subscriber;
 import com.rti.dds.subscription.SubscriberQos;
 import com.rti.dds.subscription.SubscriptionMatchedStatus;
 import com.rti.dds.subscription.ViewStateKind;
@@ -30,7 +33,7 @@ import ice.NumericDataReader;
 import ice.SampleArrayDataReader;
 
 public class OpenICEListener implements Runnable {
-	
+
 	private DeviceManager deviceManager = null;
 
 	public void receiveOnMiddlewareThread(final DomainParticipant participant, final Topic sampleArrayTopic,
@@ -62,9 +65,9 @@ public class OpenICEListener implements Runnable {
 						// If the updated sample status contains fresh data that
 						// we can evaluate
 						if (si.valid_data) {
-//							System.out.println(data);
-//							deviceManager.sendDaTa(data.toString());
-							
+							// System.out.println(data);
+							// deviceManager.sendDaTa(data);
+
 						}
 
 					}
@@ -79,33 +82,40 @@ public class OpenICEListener implements Runnable {
 			}
 
 			@Override
-			public void on_liveliness_changed(DataReader arg0, LivelinessChangedStatus arg1) {
-				System.out.println("liveliness_changed " + arg1);
+			public void on_liveliness_changed(DataReader dataReader, LivelinessChangedStatus arg1) {
+//				System.out.println("***** on_liveliness_changed *****");
+				// System.out.println("Data reader1 status changes: " +
+				// arg0.get_status_changes());
+				// System.out.println("Data reader1 status condition: " +
+				// arg0.get_statuscondition());
+				// System.out.println("Data reader1 status condition: " +
+				// arg0.get_topicdescription().get_name());
+				// System.out.println("Liveliness_changed: " + arg1);
 			}
 
 			@Override
 			public void on_requested_deadline_missed(DataReader arg0, RequestedDeadlineMissedStatus arg1) {
-				System.out.println("requested_deadline_missed " + arg1);
+				// System.out.println("requested_deadline_missed " + arg1);
 			}
 
 			@Override
 			public void on_requested_incompatible_qos(DataReader arg0, RequestedIncompatibleQosStatus arg1) {
-				System.out.println("requested_incompatible_qos " + arg1);
+				// System.out.println("requested_incompatible_qos " + arg1);
 			}
 
 			@Override
 			public void on_sample_lost(DataReader arg0, SampleLostStatus arg1) {
-				System.out.println("sample_lost " + arg1);
+				// System.out.println("sample_lost " + arg1);
 			}
 
 			@Override
 			public void on_sample_rejected(DataReader arg0, SampleRejectedStatus arg1) {
-				System.out.println("sample_rejected " + arg1);
+				// System.out.println("sample_rejected " + arg1);
 			}
 
 			@Override
 			public void on_subscription_matched(DataReader arg0, SubscriptionMatchedStatus arg1) {
-				System.out.println("subscription_matched " + arg1);
+				// System.out.println("subscription_matched " + arg1);
 			}
 
 		};
@@ -141,9 +151,13 @@ public class OpenICEListener implements Runnable {
 								// This is a pulse rate from pulse oximetry
 								// System.out.println("Pulse Rate="+data.value);
 							}
-//							System.out.println(data);
-//							data.presentation_time.toString();
-							deviceManager.sendDaTa(data);
+							// System.out.println(data);
+							data.presentation_time.toString();
+							try {
+								deviceManager.sendDaTa(data);
+							} catch (Exception ex) {
+								System.out.println("OpenICEListener.receiveOnMiddlewareThread() - " + ex.getMessage());
+							}
 						}
 
 					}
@@ -161,32 +175,39 @@ public class OpenICEListener implements Runnable {
 
 			@Override
 			public void on_liveliness_changed(DataReader arg0, LivelinessChangedStatus arg1) {
-				System.out.println("liveliness_changed " + arg1);
+				// System.out.println("Liveliness_changed: " + arg1);
+				// System.out.println("Data reader1 status changes: " +
+				// arg0.get_status_changes());
+				// System.out.println("Data reader1 status condition: " +
+				// arg0.get_statuscondition());
+				// System.out.println("Data reader1 status condition: " +
+				// arg0.get_topicdescription().get_name());
+
 			}
 
 			@Override
 			public void on_requested_deadline_missed(DataReader arg0, RequestedDeadlineMissedStatus arg1) {
-				System.out.println("requested_deadline_missed " + arg1);
+				// System.out.println("requested_deadline_missed " + arg1);
 			}
 
 			@Override
 			public void on_requested_incompatible_qos(DataReader arg0, RequestedIncompatibleQosStatus arg1) {
-				System.out.println("requested_incompatible_qos " + arg1);
+				// System.out.println("requested_incompatible_qos " + arg1);
 			}
 
 			@Override
 			public void on_sample_lost(DataReader arg0, SampleLostStatus arg1) {
-				System.out.println("sample_lost " + arg1);
+				// System.out.println("sample_lost " + arg1);
 			}
 
 			@Override
 			public void on_sample_rejected(DataReader arg0, SampleRejectedStatus arg1) {
-				System.out.println("sample_rejected " + arg1);
+				// System.out.println("sample_rejected " + arg1);
 			}
 
 			@Override
 			public void on_subscription_matched(DataReader arg0, SubscriptionMatchedStatus arg1) {
-				System.out.println("subscription_matched " + arg1);
+				// System.out.println("subscription_matched " + arg1);
 			}
 		};
 
@@ -305,6 +326,6 @@ public class OpenICEListener implements Runnable {
 
 	public void setDeviceManager(DeviceManager newDeviceManager) {
 		this.deviceManager = newDeviceManager;
-		
+
 	}
 }

@@ -1,7 +1,12 @@
 package deviceManager;
 
+import static java.util.concurrent.TimeUnit.SECONDS;
+
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
 
 import observer.ETCO2Observer;
 import observer.RRObserver;
@@ -14,11 +19,24 @@ public class GenericRespirationMonitor extends GenericDevice implements RRObserv
 	private double currentEtCO2 = INVALID_VALUE ;
 	private ArrayList<RRObserver> rrObservers = null;
 	private ArrayList<ETCO2Observer> etco2Observers = null;
+	private ScheduledExecutorService scheduler = null;
+	
+	public GenericRespirationMonitor() {
+		super();
+	}
 	
 	@Override
 	public void setData(float value, Device measurementType) {
 		setLastDataReceived(Calendar.getInstance());
-		
+		if (!wakeUp) {
+			System.out.println("GenericDevice.isAlive() - device: " + this.toString() + " ACORDOU!!!");
+			setWakeUp(true);
+			notifyDeviceIsOn(this);
+			System.out.println("GenericRespirationMonitor.setData() - vai rodar a nova thread");
+			scheduler = Executors.newScheduledThreadPool(5);
+			ScheduledFuture<?> handle2 = scheduler.scheduleWithFixedDelay(
+					this.getDeviceMonitor(), 1, 2, SECONDS);
+		}
 		if (Device.RESP_MONITOR_RESP_RATE.equals(measurementType)) {
 			currentRespirationRate = Math.round(value);
 			notifyRRhasChanged(currentRespirationRate);
@@ -31,6 +49,11 @@ public class GenericRespirationMonitor extends GenericDevice implements RRObserv
 
 	public double getCurrentEtCO2() {
 		return currentEtCO2;
+	}
+	
+	@Override
+	public String toString() {
+		return "GenericRespirationMonitor";
 	}
 
 	public void setCurrentEtCO2(double currentEtCO2) {
@@ -94,6 +117,12 @@ public class GenericRespirationMonitor extends GenericDevice implements RRObserv
 	protected void resetCurrentValues() {
 		this.currentEtCO2 = INVALID_VALUE;
 		this.currentRespirationRate = INVALID_VALUE;
+		
+	}
+
+	@Override
+	public void turnOffMonitor() {
+		scheduler.shutdownNow();
 		
 	}
 

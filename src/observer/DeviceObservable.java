@@ -1,9 +1,12 @@
 package observer;
 
+import deviceManager.GenericDevice;
+
 public interface DeviceObservable {
 	
-	public void registerObserver(DeviceObserver observer);
-    public void removeObserver(DeviceObserver observer);
-    public void updateValueObservers(float value);
-
+	public void registerDeviceObserver(DeviceListener observer);
+    public void removeDeviceObserver(DeviceListener observer);
+    public void notifyDeviceIsOff(GenericDevice device);
+    public void notifyDeviceIsOn(GenericDevice device);
+    
 }

@@ -1,8 +1,6 @@
 package deviceManager;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import util.Configuration;
 import util.Device;
 
 /**
@@ -21,14 +19,10 @@ public class DeviceManager {
 	private GenericPulseOximeter genericPulseOximeter;
 	private GenericRespirationMonitor genericRespirationMonitor;
 	
-	private List<GenericDevice> devices;
 	
 	private DeviceManager() {
 		this.setGenericPulseOximeter(new GenericPulseOximeter());
 		this.setGenericRespirationMonitor(new GenericRespirationMonitor());
-		
-		addDeviceToList(getGenericPulseOximeter());
-		addDeviceToList(getGenericRespirationMonitor());
 	}
 	
 	public static DeviceManager getInstance() {
@@ -38,14 +32,6 @@ public class DeviceManager {
 		return singleton;
 	}
 	
-	private void addDeviceToList(GenericDevice dev) {
-		if (this.devices == null) {
-			this.devices = new ArrayList<GenericDevice>();
-		}
-		
-		this.devices.add(dev);
-	}
-	
 	public void sendDaTa(ice.Numeric data) {
 		if (data != null) {
 			
@@ -53,6 +39,7 @@ public class DeviceManager {
 				String deviceID = data.metric_id;
 				
 				if (deviceID.equals(Device.PULS_OXIM_PULS_RATE.getName())) {
+					
 					this.getGenericPulseOximeter().setData(data.value, Device.PULS_OXIM_PULS_RATE);
 					
 				}  else if (deviceID.equals(Device.PULS_OXIM_SAT_O2.getName())) {
@@ -88,6 +75,24 @@ public class DeviceManager {
 
 	public void setGenericRespirationMonitor(GenericRespirationMonitor genericRespirationMonitor) {
 		this.genericRespirationMonitor = genericRespirationMonitor;
+	}
+
+	public Configuration getActiveConfiguration() {
+//		System.out.println("DeviceManager.getActiveConfiguration() pulse oximeter: " + genericPulseOximeter.isAlive());
+//		System.out.println("DeviceManager.getActiveConfiguration() respiration monitor: " + genericRespirationMonitor.isAlive());
+		if (genericPulseOximeter.isAlive()) {
+			if (genericRespirationMonitor.isAlive()) {
+				return Configuration.Config3;
+			} else {
+				return Configuration.Config1;
+			}
+		} else {
+			if (genericRespirationMonitor.isAlive()) {
+				return Configuration.Config2;
+			} else {
+				return Configuration.Config_OFF;
+			}
+		}
 	}
 
 }

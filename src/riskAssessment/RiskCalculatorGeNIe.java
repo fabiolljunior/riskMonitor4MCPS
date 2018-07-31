@@ -5,21 +5,25 @@ import java.util.Calendar;
 
 import datamanagement.GraphicDataManagment;
 import deviceManager.DeviceManager;
+import deviceManager.GenericDevice;
 import deviceManager.GenericPulseOximeter;
 import deviceManager.GenericRespirationMonitor;
+import observer.DeviceListener;
 import observer.ETCO2Observer;
 import observer.HRObserver;
 import observer.RRObserver;
 import observer.RiskObservable;
 import observer.RiskObserver;
 import observer.SPO2Observer;
+import riskAssessment.riskMetric.BBNHandlerIF;
+import riskAssessment.riskMetric.RiskMetricHandler;
 
-public class RiskCalculatorGeNIe implements SPO2Observer, HRObserver, RRObserver, ETCO2Observer, RiskObservable{
+public class RiskCalculatorGeNIe implements SPO2Observer, HRObserver, RRObserver, ETCO2Observer, RiskObservable, DeviceListener{
 	
 	private GenericPulseOximeter pulseOximeter;
 	private GenericRespirationMonitor respMonitor;
 	private Risk currentriskLevel = null;
-	private BBNGeNIeHandler bbnHandler = null; 
+	private BBNHandlerIF bbnHandler = null; 
 	
 	private ArrayList<RiskObserver> riskListeners = null;
 	
@@ -32,7 +36,9 @@ public class RiskCalculatorGeNIe implements SPO2Observer, HRObserver, RRObserver
 		pulseOximeter.registerSPO2Observer(this);
 		respMonitor.registerRRObserver(this);
 		respMonitor.registerETCO2Observer(this);
-		bbnHandler = BBNGeNIeHandler.getInstance();
+		bbnHandler = RiskMetricHandler.getInstance().getRiskMetricConfig3();
+		pulseOximeter.registerDeviceObserver(this);
+		respMonitor.registerDeviceObserver(this);
 	}
 	
 	public RiskCalculatorGeNIe(DeviceManager deviceManager) {
@@ -44,7 +50,9 @@ public class RiskCalculatorGeNIe implements SPO2Observer, HRObserver, RRObserver
 		pulseOximeter.registerSPO2Observer(this);
 		respMonitor.registerRRObserver(this);
 		respMonitor.registerETCO2Observer(this);
-		bbnHandler = BBNGeNIeHandler.getInstance();
+		bbnHandler = RiskMetricHandler.getInstance().getRiskMetricConfig3();
+		pulseOximeter.registerDeviceObserver(this);
+		respMonitor.registerDeviceObserver(this);
 	}
 	
 
@@ -116,6 +124,46 @@ public class RiskCalculatorGeNIe implements SPO2Observer, HRObserver, RRObserver
 
 	public Risk calculateRisk() {
 		return bbnHandler.updateRisk();
+	}
+
+	@Override
+	public void deviceTurnedOn(GenericDevice device) {
+		//TODO: change risk configuration according to the turned on device
+		System.out.println("RiskCalculatorGeNIe.deviceTurnedOn() - device: " + device);
+		if (device instanceof GenericPulseOximeter) {
+			if (respMonitor.isAlive()) {
+				bbnHandler = RiskMetricHandler.getInstance().getRiskMetricConfig3();
+			} else {
+				bbnHandler = RiskMetricHandler.getInstance().getRiskMetricConfig1();
+			}
+		} else {
+			if (pulseOximeter.isAlive()) {
+				bbnHandler = RiskMetricHandler.getInstance().getRiskMetricConfig3();
+			} else {
+				bbnHandler = RiskMetricHandler.getInstance().getRiskMetricConfig2();
+			}
+		}
+		System.out.println("RiskCalculatorGeNIe.deviceTurnedOn() - vai mudar a metrica de risco: " + bbnHandler);
+		notifyRiskChange(bbnHandler.updateRisk());
+	}
+
+	@Override
+	public void deviceTurnedOff(GenericDevice device) {
+		//TODO: change risk configuration according to the turned on device
+		System.out.println("RiskCalculatorGeNIe.deviceTurnedOff() - device: " + device);
+		if (device instanceof GenericPulseOximeter) {
+			if (respMonitor.isAlive()) {
+				bbnHandler = RiskMetricHandler.getInstance().getRiskMetricConfig2();
+			} //TODO: avisar na tela quando não tiver equipamentos ligados
+		} else {
+			if (pulseOximeter.isAlive()) {
+				System.out.println("RiskCalculatorGeNIe.deviceTurnedOff() - vai ligar a metrica de risco 1");
+				bbnHandler = RiskMetricHandler.getInstance().getRiskMetricConfig1();
+				System.out.println("RiskCalculatorGeNIe.deviceTurnedOff() - ligou a metrica de risco 1");
+			} //TODO: avisar na tela quando não tiver equipamentos ligados
+		}
+		System.out.println("RiskCalculatorGeNIe.deviceTurnedOff() - vai mudar a metrica de risco: " + bbnHandler);
+		notifyRiskChange(bbnHandler.updateRisk());
 	}
 
 }
